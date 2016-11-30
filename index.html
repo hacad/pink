@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <navigation class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">HTML academy</a>
+          </li>
+        </ul>
+      </navigation>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="promo">
+      <div class="promo__image">
+      </div>
+    </section>
+    <section class="downloads">
+      <div class="container">
+        <a class="btn btn--download" href="#">Скачать приложение</a>
+        <div class="downloads-app">
+          <a class="downloads-app__link downloads-app__link--apple" href="#">Apple</a>
+          <a class="downloads-app__link downloads-app__link--android" href="#">Android</a>
+          <a class="downloads-app__link downloads-app__link--windows" href="#">Windows</a>
+        </div>
+        <p class="downloads__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="features__title">
+          <h2 class="features__title-item">Устали от серости мегаполиса?</h2>
+          <h2 class="features__title-item">Нам есть что вам предложить</h2>
+        </div>
+        <div class="features-item">
+          <h2 class="features-item__title">Поднимает настроение</h2>
+          <p class="features-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="features-item">
+          <h2 class="features-item__title">Меняет мир вокруг</h2>
+          <p class="features-item__description">Сделайте снимок и украсте его смайликом или текстовой подписью чтобы усилить эффект</p>
+        </div>
+        <div class="features-item">
+          <h2 class="features-item__title">Заводит новых друзей</h2>
+          <p class="features-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</h2>
+        </div>
+        <!-- ?
+        <div class="features-image"></div>
+        -->
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="slider-reviews">
+          <div class="reviews-item">
+            <h2 class="reviews-item__title">Николай Петров</h2>
+            <p class="reviews-item__text">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
+              в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </div>
+          <div class="reviews-item">
+            <h2 class="reviews-item__title">Николай Петров</h2>
+            <p class="reviews-item__text">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
+              в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </div>
+          <div class="reviews-item">
+            <h2 class="reviews-item__title">Николай Петров</h2>
+            <p class="reviews-item__text">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
+              в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </div>
+          <div class="slider-reviews___controls">
+            <input class="radio" type="radio" id="btn-1" name="toggle" checked>
+            <input class="radio" type="radio" id="btn-2" name="toggle">
+            <input class="radio" type="radio" id="btn-3" name="toggle">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <!-- Is it the same slider as for review section -->
+        <div class="slider-price">
+          <div class="price-item">
+            <div class="price-item__title">Стандарт</div>
+            <div class="price-item__price">3,99 USD</div>
+            <ul class="price-item__options">
+              <li class="price-item__option">Розовый фильтр</li>
+              <li class="price-item__option">Смайлики</li>
+              <li class="price-item__option">Комментарии</li>
+            </ul>
+          </div>
+          <div class="slider-reviews___controls">
+            <input class="radio" type="radio" id="btn-1" name="toggle" checked>
+            <input class="radio" type="radio" id="btn-2" name="toggle">
+            <input class="radio" type="radio" id="btn-3" name="toggle">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__title">
+          <h2 class="contacts__title-item">Остались вопросы?</h2>
+          <h2 class="contacts__title-item">Свяжитесь с нами</h2>
+        </div>
+        <div class="contacts-item">
+          <h2 class="contacts-item__title">Звоните:</h2>
+          <h2 class="contacts-item__contact">+7(812)555-66-66</h2>
+        </div>
+        <div class="contacts-item">
+          <h2 class="contacts-item__title">Пишите:</h2>
+          <h2 class="contacts-item__contact">mail@htmlacademy.ru</h2>
+        </div>
+        <div class="contacts-item">
+          <h2 class="contacts-item__title">Приезжайте в гости:</h2>
+          <h2 class="contacts-item__contact">ул. Большая Конюшенная, 19/8</h2>
+        </div>
+      </div>
+    </section>
+    <div class="map"></div>
+  </main>
+
+</body>
+
 </html>
