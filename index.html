@@ -10,7 +10,8 @@
 
   <header class="main-header">
     <div class="container">
-      <navigation class="navigation">
+      <a class="logo" href="#">pink</a>
+      <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link">Главная</a>
@@ -25,44 +26,44 @@
             <a class="navigation__link">HTML academy</a>
           </li>
         </ul>
-      </navigation>
+      </nav>
     </div>
   </header>
   <main class="main-content">
     <section class="promo">
       <div class="promo__image">
       </div>
-    </section>
-    <section class="downloads">
-      <div class="container">
-        <a class="btn btn--download" href="#">Скачать приложение</a>
-        <div class="downloads-app">
-          <a class="downloads-app__link downloads-app__link--apple" href="#">Apple</a>
-          <a class="downloads-app__link downloads-app__link--android" href="#">Android</a>
-          <a class="downloads-app__link downloads-app__link--windows" href="#">Windows</a>
+      <div class="promo__downloads">
+        <div class="container">
+          <a class="btn btn--download" href="#">Скачать приложение</a>
+          <div class="downloads-app">
+            <a class="downloads-app__link downloads-app__link--apple" href="#">Apple</a>
+            <a class="downloads-app__link downloads-app__link--android" href="#">Android</a>
+            <a class="downloads-app__link downloads-app__link--windows" href="#">Windows</a>
+          </div>
+          <p class="downloads__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
         </div>
-        <p class="downloads__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
       </div>
     </section>
     <section class="features">
       <div class="container">
         <div class="features__title">
-          <h2 class="features__title-item">Устали от серости мегаполиса?</h2>
-          <h2 class="features__title-item">Нам есть что вам предложить</h2>
+          <span class="features__title-item">Устали от серости мегаполиса?</span>
+          <span class="features__title-item">Нам есть что вам предложить</span>
         </div>
         <div class="features-item">
-          <h2 class="features-item__title">Поднимает настроение</h2>
+          <span class="features-item__title">Поднимает настроение</span>
           <p class="features-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
         <div class="features-item">
-          <h2 class="features-item__title">Меняет мир вокруг</h2>
+          <span class="features-item__title">Меняет мир вокруг</span>
           <p class="features-item__description">Сделайте снимок и украсте его смайликом или текстовой подписью чтобы усилить эффект</p>
         </div>
         <div class="features-item">
-          <h2 class="features-item__title">Заводит новых друзей</h2>
-          <p class="features-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</h2>
+          <span class="features-item__title">Заводит новых друзей</span>
+          <p class="features-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
         <!-- ?
         <div class="features-image"></div>
@@ -73,7 +74,7 @@
       <div class="container">
         <div class="slider-reviews">
           <div class="reviews-item">
-            <h2 class="reviews-item__title">Николай Петров</h2>
+            <span class="reviews-item__title">Николай Петров</span>
             <p class="reviews-item__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому
               взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
@@ -81,7 +82,7 @@
             </p>
           </div>
           <div class="reviews-item">
-            <h2 class="reviews-item__title">Николай Петров</h2>
+            <span class="reviews-item__title">Николай Петров</span>
             <p class="reviews-item__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому
               взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
@@ -89,20 +90,20 @@
             </p>
           </div>
           <div class="reviews-item">
-            <h2 class="reviews-item__title">Николай Петров</h2>
+            <span class="reviews-item__title">Николай Петров</span>
             <p class="reviews-item__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому
               взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
               в комментариях к выложенной фотографии!&raquo;
             </p>
           </div>
-          <div class="slider-reviews___controls">
-            <input class="radio" type="radio" id="btn-1" name="toggle" checked>
-            <input class="radio" type="radio" id="btn-2" name="toggle">
-            <input class="radio" type="radio" id="btn-3" name="toggle">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+          <div class="slider-reviews__controls">
+            <input class="radio" type="radio" id="btn-review-1" name="review-toggle" checked>
+            <input class="radio" type="radio" id="btn-review-2" name="review-toggle">
+            <input class="radio" type="radio" id="btn-review-3" name="review-toggle">
+            <label for="btn-review-1"></label>
+            <label for="btn-review-2"></label>
+            <label for="btn-review-3"></label>
           </div>
         </div>
       </div>
@@ -121,12 +122,12 @@
             </ul>
           </div>
           <div class="slider-reviews___controls">
-            <input class="radio" type="radio" id="btn-1" name="toggle" checked>
-            <input class="radio" type="radio" id="btn-2" name="toggle">
-            <input class="radio" type="radio" id="btn-3" name="toggle">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <input class="radio" type="radio" id="btn-price-1" name="price-toggle" checked>
+            <input class="radio" type="radio" id="btn-price-2" name="price-toggle">
+            <input class="radio" type="radio" id="btn-price-3" name="price-toggle">
+            <label for="btn-price-1"></label>
+            <label for="btn-price-2"></label>
+            <label for="btn-price-3"></label>
           </div>
         </div>
       </div>
@@ -134,24 +135,24 @@
     <section class="contacts">
       <div class="container">
         <div class="contacts__title">
-          <h2 class="contacts__title-item">Остались вопросы?</h2>
-          <h2 class="contacts__title-item">Свяжитесь с нами</h2>
+          <span class="contacts__title-item">Остались вопросы?</span>
+          <span class="contacts__title-item">Свяжитесь с нами</span>
         </div>
         <div class="contacts-item">
-          <h2 class="contacts-item__title">Звоните:</h2>
-          <h2 class="contacts-item__contact">+7(812)555-66-66</h2>
+          <span class="contacts-item__title">Звоните:</span>
+          <a class="contacts-item__contact" href="tel:+7(812)555-66-66">+7(812)555-66-66</span>
         </div>
         <div class="contacts-item">
-          <h2 class="contacts-item__title">Пишите:</h2>
-          <h2 class="contacts-item__contact">mail@htmlacademy.ru</h2>
+          <span class="contacts-item__title">Пишите:</span>
+          <a class="contacts-item__contact" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</span>
         </div>
         <div class="contacts-item">
-          <h2 class="contacts-item__title">Приезжайте в гости:</h2>
-          <h2 class="contacts-item__contact">ул. Большая Конюшенная, 19/8</h2>
+          <span class="contacts-item__title">Приезжайте в гости:</span>
+          <span class="contacts-item__contact">ул. Большая Конюшенная, 19/8</span>
         </div>
       </div>
     </section>
-    <div class="map"></div>
+    <section class="map"></section>
   </main>
 
 </body>
