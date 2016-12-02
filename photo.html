@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a class="logo" href="#">pink</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="promo">
+      <h1 class="promo__title">Фотографии пользователей</h1>
+      <p class="promo__description">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите как не хватает ваших?
+      </p>
+    </section>
+    <section class="user-photo">
+      <div class="user-photo__photo-wrapper">
+        <img class="user-photo__photo" src="" alt="panorama of the day">
+        <span class="user-photo__sticker">Панорама дня</span>
+      </div>
+      <div class="container">
+        <div class="user-photo__photo-description">
+          <span class="user-photo__author">Анна</span><span class="user-photo__time">(5 минут назад)</span>
+          <p class="user-photo__text">
+            Прыгать или нет? Напишите в комментарии свой ответ и смотрите прямую трансляцию
+            в перископе, задавайте свои вопросы!
+          </p>
+          <div class="user-photo__social">Нравится: 215</div>
+        </div>
+      </div>
+    </section>
+    <section class="user-photo">
+      <div class="container">
+        <img class="user-photo__photo" src="" alt="">
+        <div class="user-photo__photo-description">
+          <span class="user-photo__author">Левон</span><span class="user-photo__time">(5 часов назад)</span>
+          <p class="user-photo__text">
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+          <div class="user-photo__social">Нравится: 356</div>
+        </div>
+      </div>
+    </section>
+    <section class="user-photo">
+      <div class="container">
+        <img class="user-photo__photo" src="" alt="">
+        <div class="user-photo__photo-description">
+          <span class="user-photo__author">Антон</span><span class="user-photo__time">(12 часов назад)</span>
+          <p class="user-photo__text">
+            Соседи будут рады!
+          </p>
+          <div class="user-photo__social">Нравится: 400</div>
+        </div>
+      </div>
+    </section>
+    <section class="user-photo">
+      <div class="container">
+        <img class="user-photo__photo" src="" alt="">
+        <div class="user-photo__photo-description">
+          <span class="user-photo__author">Борис</span><span class="user-photo__time">(20 часов назад)</span>
+          <p class="user-photo__text">
+            Здесь могла быть ваша цитата о высоком и вечном
+          </p>
+          <div class="user-photo__social">Нравится: 356</div>
+        </div>
+      </div>
+    </section>
+    <section class="user-photo">
+      <div class="container">
+        <img class="user-photo__photo" src="" alt="">
+        <div class="user-photo__photo-description">
+          <span class="user-photo__author">Сергей</span><span class="user-photo__time">(25 часов назад)</span>
+          <p class="user-photo__text">
+            Самая кубанская в мире!
+          </p>
+          <div class="user-photo__social">Нравится: 4</div>
+        </div>
+      </div>
+    </section>
+    <section class="user-photo">
+      <div class="container">
+        <img class="user-photo__photo" src="" alt="">
+        <div class="user-photo__photo-description">
+          <span class="user-photo__author">Максим</span><span class="user-photo__time">(40 часов назад)</span>
+          <p class="user-photo__text">
+            Где снег-то?
+          </p>
+          <div class="user-photo__social">Нравится: 150</div>
+        </div>
+      </div>
+    </section>
+    <section class="user-photo">
+      <div class="container">
+        <img class="user-photo__photo" src="" alt="">
+        <div class="user-photo__photo-description">
+          <span class="user-photo__author">Надежда</span><span class="user-photo__time">(45 часов назад)</span>
+          <p class="user-photo__text">
+            Всем GM и взаимные лайки
+          </p>
+          <div class="user-photo__social">Нравится: 2560</div>
+        </div>
+      </div>
+    </section>
+    <form class="upload">
+      <div class="container">
+        <p class="upload__title">
+          Затмите их всех! Выкладывайте всё что накопилось на телефоне!
+        </p>
+        <div class="upload__image-wrapper">
+          <img class="upload__image" src="" alt="">
+        </div>
+        <div class="upload__image-tools">
+          <div class="upload__field">
+            <label class="upload__label upload__label--crop">
+              <input type="range" min="0" max="10" step="1">
+            </label>
+          </div>
+          <div class="upload__field">
+            <label class="upload__label upload__label--saturation">
+              <input type="range" min="0" max="10" step="1">
+            </label>
+          </div>
+          <div class="upload__field">
+            <label class="upload__label upload__label--brightness">
+              <input type="range" min="0" max="10" step="1">
+            </label>
+          </div>
+        </div>
+        <div class="upload__buttons-wrapper">
+          <button class="upload__btn upload__btn--submit" type="submit">Запостить</button>
+          <button class="upload__btn upload__btn--reset" type="submit">Отмена</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="container container--main-footer">
+      <a class="logo" href="#"><img src="" alt="pink">pink</a>
+      <section class="social-links">
+        <a href="#" class="social-link social-link--twitter">Twitter</a>
+        <a href="#" class="social-link social-link--facebook">Facebook</a>
+        <a href="#" class="social-link social-link--youtube">Youtube</a>
+      </section>
+      <section class="copyright">
+        <div class="copyright__text">Разработано</div><a class="copyright__link" href="#"><img class="copyright__logo" src="" alt="pink"></a>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>

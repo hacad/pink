@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+
+  <body>
+  <header class="main-header">
+    <div class="container">
+      <a class="logo" href="#">pink</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <main class="main-content container">
+      <section class="promo">
+        <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <p class="promo__description">
+            Поделитесь своей историей и получите шанс выиграть ценный приз &mdash;
+            1000 миль на вашу бонусную карту
+        </p>
+      </section>
+      <form class="form-contest">
+        <fieldset class="form-section">
+          <label class="label" for="name-field">Фамилия:</label>
+          <input class="input" type="text" name="lastname" id="lastname-field" placeholder="Укажите фамилию *">
+          <label class="label" for="lastname-field">Имя:</label>
+          <input class="input" type="text" name="lastname" id="name-field" placeholder="Введите ваше имя *">
+          <label class="label" for="patronymic-field">Отчество:</label>
+          <input class="input" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="form-section  form-section--gray">
+          <legend class="form-section__title">Ваши безбашенные достижения в путешествии</legend>
+          <label class="label" for="shark-selfie-field">Сделал селфи с акулой</label>
+          <input class="checkbox" type="checkbox" name="shark-selfie" id="shark-selfie-field">
+          <label class="label" for="sunburn-field">Обгорел на пляже</label>
+          <input class="checkbox" type="checkbox" name="sunburn" id="sunburn-field">
+          <label class="label" for="chuck-field">Видел Чака Норриса</label>
+          <input class="checkbox" type="checkbox" name="chuck" id="chuck-field">
+          <label class="label" for="souvenir-field">Накупил сувениров</label>
+          <input class="checkbox" type="checkbox" name="souvenir" id="souvenir-field">
+          <label class="label" for="tower-field">Удержал башню</label>
+          <input class="checkbox" type="checkbox" name="tower" id="tower-field">
+          <label class="label" for="hotel-field">Разгромил отель</label>
+          <input class="checkbox" type="checkbox" name="hotel" id="hotel-field">
+        </fieldset>
+        <fieldset class="form-section">
+          <label class="label" for="phone-field">Номер телефона</label>
+          <input class="input" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+          <label class="label" for="email-field">Адресок почты</label>
+          <input class="input" type="email" name="email" id="email-field" placeholder="Ввежите почту *" required>
+        </fieldset>
+        <fieldset class="form-section form-section--gray">
+          <legend class="form-section__title">С каким приложением путешествовали?</legend>
+          <label class="label" for="pink-ios-field">Pink для iOS</label>
+          <input class="radio" type="radio" name="pink-ios" id="pink-ios-field">
+          <label class="label" for="pink-android-field">Pink для Android</label>
+          <input class="radio" type="radio" name="pink-android" id="pink-android-field">
+          <label class="label" for="windows-phone-field">Windows Phone</label>
+          <input class="radio" type="radio" name="windows-phone" id="windows-phone-field">
+        </fieldset>
+        <fieldset class="form-section">
+          <label class="label" for="emotions-field">Опишите свои эмоции</label>
+          <textarea class="input" placeholder="Можно прям в красках, не стесняясь в выражениях" name="emotions" id="emotions-field"></textarea>
+        </fieldset>
+        <button class="btn btn--green" type="submit">Отправить форму</button>
+        <div class="form-contest__form-info"><span class="form-contest__asterisk">*</span>&mdash; Обязательные поля</div>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="container container--main-footer">
+        <a class="logo" href="#"><img src="" alt="pink">pink</a>
+        <section class="social-links">
+          <a href="#" class="social-link social-link--twitter">Twitter</a>
+          <a href="#" class="social-link social-link--facebook">Facebook</a>
+          <a href="#" class="social-link social-link--youtube">Youtube</a>
+        </section>
+        <section class="copyright">
+          <div class="copyright__text">Разработано</div><a class="copyright__link" href="#"><img class="copyright__logo" src="" alt="pink"></a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
