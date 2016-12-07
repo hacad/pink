@@ -1,0 +1,52 @@
+.user-photo {
+  margin-bottom: 20px;
+
+  font-size: $font-size;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+  }
+
+  &__sticker {
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    display: inline-block;
+    padding: 6px 20px;
+
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: $pink;
+  }
+
+  &__photos-container {
+    background-color: $white;
+  }
+
+  &__photo-description {
+    color: $gray-dark;
+    background-color: $light-gray;
+  }
+
+  &__author {
+    font-weight: calc($font-weight + 300);
+  }
+
+  &__time {
+    color: $gray;
+  }
+
+  &__text {
+    line-height: $line-height;
+  }
+
+  &__social {
+    color: $pink;
+  }
+}

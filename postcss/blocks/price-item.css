@@ -1,0 +1,26 @@
+.price-item {
+  background-color: $white;
+
+  font-size: $font-size;
+
+  &__header {
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    background-color: $gray-dark;
+    color: $white;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $font-size-big;
+    font-weight: calc($font-weight + 300);
+    line-height: $line-height-h1;
+  }
+
+  &__price {
+    text-align: center;
+    font-size: $font-size-h1;
+    font-weight: calc($font-weight - 100);
+  }
+}

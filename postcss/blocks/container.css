@@ -1,0 +1,12 @@
+.container {
+  width: $container-width;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  outline: 1px solid lightblue;
+}
+
+.container--without-paddings {
+  padding: 0;
+  width: calc($container-width + 40);
+}
