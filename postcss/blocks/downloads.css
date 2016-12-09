@@ -3,12 +3,9 @@
   color: $white;
 
   &__link {
-    width: 60px;
-    height: 60px;
     margin-right: 30px;
 
     display: inline-block;
-    /*Why they are not aligned?*/
     vertical-align: bottom;
 
     background-repeat: no-repeat;
@@ -17,14 +14,22 @@
     font-size: 0;
 
     &--apple {
+      width: 46px;
+      height: 56px;
+
       background-image: url("../img/logo-apple.svg");
+
     }
 
     &--android {
-        background-image: url("../img/logo-android.svg");
+      width: 42px;
+      height: 47px;
+      background-image: url("../img/logo-android.svg");
     }
 
     &--windows {
+      width: 43px;
+      height: 41px;
       background-image: url("../img/logo-microsoft.svg");
     }
 

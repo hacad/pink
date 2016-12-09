@@ -1,8 +1,5 @@
 .price {
-  padding-top: 60px;
-
   background-color: $light-gray;
-  @mixin white-top-guillotine;
 
   outline: 1px solid red;
 }

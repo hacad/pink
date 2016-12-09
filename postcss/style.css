@@ -1,10 +1,6 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff");
-}
-
-@import "./mixins.css";
+@import "./fonts.css";
 @import "./variables.css";
+
 @import "./blocks/btn.css";
 @import "./blocks/input.css";
 @import "./blocks/label.css";
@@ -31,8 +27,6 @@
 
 @import "./blocks/map.css";
 @import "./blocks/main-footer.css";
+@import "./blocks/copyright.css";
 
-body {
-  background: blanchedalmond;
-  font-family: $font-family;
-}
+@import "./common.css";

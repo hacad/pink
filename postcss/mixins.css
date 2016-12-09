@@ -1,5 +1,0 @@
-@define-mixin white-top-guillotine {
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 25px;
-}

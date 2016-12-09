@@ -7,7 +7,7 @@
   &::after {
     position: absolute;
     bottom: -calc($container-width / 7);
-    left: 0px;
+    left: 0;
     z-index: 1;
 
     content: "";
@@ -19,7 +19,6 @@
 
     outline: 1px solid red;
   }
-
 }
 
 .contacts__title {
