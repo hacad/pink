@@ -1,0 +1,15 @@
+.upload {
+  padding-top: 20px;
+
+  background-color: $light-gray;
+
+  outline: 1px solid red;
+
+  &__title {
+    margin: 0;
+
+    text-align: center;
+
+    background-color: $white;
+  }
+}

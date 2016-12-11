@@ -1,0 +1,15 @@
+.form-section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: $white;
+  border: none;
+
+  &--gray {
+    background-color: $light-gray;
+  }
+
+  & input[type="text"], & label {
+    display: block;
+  }
+}

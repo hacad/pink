@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header class="main-header">
-    <div class="container">
-      <a class="logo" href="#">pink</a>
+  <header class="main-header container container--without-paddings">
+      <a class="logo" href="#"><img src="/img/logo-pink-white-mobile.svg" alt="pink"></a>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -27,32 +27,33 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
   <main class="main-content">
-    <section class="promo">
+    <section class="promo container container--without-paddings">
       <div class="promo__image">
+        <img src="/img/iphone-hand-mobile@1x.png" width="258" height="286" alt="pink app">
       </div>
-      <div class="promo__downloads">
-        <div class="container">
-          <a class="btn btn--download" href="#">Скачать приложение</a>
-          <div class="downloads-app">
-            <a class="downloads-app__link downloads-app__link--apple" href="#">Apple</a>
-            <a class="downloads-app__link downloads-app__link--android" href="#">Android</a>
-            <a class="downloads-app__link downloads-app__link--windows" href="#">Windows</a>
-          </div>
-          <p class="downloads__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+      <div class="downloads container">
+        <a class="btn btn--download" href="#">Скачать приложение</a>
+        <div class="downloads__links">
+          <a class="downloads__link downloads__link--apple" href="#">Apple</a>
+          <a class="downloads__link downloads__link--android" href="#">Android</a>
+          <a class="downloads__link downloads__link--windows" href="#">Windows</a>
         </div>
+        <p class="downloads__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </div>
     </section>
-    <section class="features">
+    <section class="main-content__description container">
+      <span class="main-content__title">Устали от серости мегаполиса?</span>
+      <span class="main-content__title">Нам есть что вам предложить</span>
+    </section>
+    <section class="features container container--without-paddings">
+      <svg version="1.0" height="25" width="320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+        <polygon fill="#fff" points="1200,0 0,0 0,94.074 "/>
+      </svg>
       <div class="container">
-        <div class="features__title">
-          <span class="features__title-item">Устали от серости мегаполиса?</span>
-          <span class="features__title-item">Нам есть что вам предложить</span>
-        </div>
         <div class="features-item">
           <span class="features-item__title">Поднимает настроение</span>
           <p class="features-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -65,56 +66,59 @@
           <span class="features-item__title">Заводит новых друзей</span>
           <p class="features-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
-        <!-- ?
-        <div class="features-image"></div>
-        -->
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="container">
-        <div class="slider-reviews">
-          <div class="reviews-item">
-            <span class="reviews-item__title">Николай Петров</span>
-            <p class="reviews-item__text">
-              &laquo;Это приложение перевернуло мой мир и позволило по-новому
-              взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
-              в комментариях к выложенной фотографии!&raquo;
-            </p>
-          </div>
-          <div class="reviews-item">
-            <span class="reviews-item__title">Николай Петров</span>
-            <p class="reviews-item__text">
-              &laquo;Это приложение перевернуло мой мир и позволило по-новому
-              взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
-              в комментариях к выложенной фотографии!&raquo;
-            </p>
-          </div>
-          <div class="reviews-item">
-            <span class="reviews-item__title">Николай Петров</span>
-            <p class="reviews-item__text">
-              &laquo;Это приложение перевернуло мой мир и позволило по-новому
-              взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
-              в комментариях к выложенной фотографии!&raquo;
-            </p>
-          </div>
-          <div class="slider-reviews__controls">
-            <input class="radio" type="radio" id="btn-review-1" name="review-toggle" checked>
-            <input class="radio" type="radio" id="btn-review-2" name="review-toggle">
-            <input class="radio" type="radio" id="btn-review-3" name="review-toggle">
-            <label for="btn-review-1"></label>
-            <label for="btn-review-2"></label>
-            <label for="btn-review-3"></label>
-          </div>
+        <div class="features__image">
+          <img src="/img/iphone-screen-mobile@1x.png" width="157" height="320" alt="pink app feature">
         </div>
       </div>
     </section>
-    <section class="price">
+    <section class="reviews container">
+      <div class="slider-reviews">
+        <div class="reviews-item">
+          <span class="reviews-item__title">Николай Петров</span>
+          <p class="reviews-item__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
+            в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </div>
+        <div class="reviews-item">
+          <span class="reviews-item__title">Николай Петров</span>
+          <p class="reviews-item__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
+            в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </div>
+        <div class="reviews-item">
+          <span class="reviews-item__title">Николай Петров</span>
+          <p class="reviews-item__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычне вещи! А ещё я познакомился со своей будущей женой
+            в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </div>
+        <div class="slider-reviews__controls">
+          <input class="radio" type="radio" id="btn-review-1" name="review-toggle" checked>
+          <input class="radio" type="radio" id="btn-review-2" name="review-toggle">
+          <input class="radio" type="radio" id="btn-review-3" name="review-toggle">
+          <label for="btn-review-1"></label>
+          <label for="btn-review-2"></label>
+          <label for="btn-review-3"></label>
+        </div>
+      </div>
+    </section>
+    <section class="price container container--without-paddings">
+      <!-- Is it the same slider as for review section -->
+      <svg version="1.0" height="25" width="320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+        <polygon fill="#fff" points="1200,0 0,0 0,94.074 "/>
+      </svg>
       <div class="container">
-        <!-- Is it the same slider as for review section -->
         <div class="slider-price">
           <div class="price-item">
-            <div class="price-item__title">Стандарт</div>
-            <div class="price-item__price">3,99 USD</div>
+            <div class="price-item__header">
+              <div class="price-item__title">Стандарт</div>
+              <div class="price-item__price">3,99 USD</div>
+            </div>
             <ul class="price-item__options">
               <li class="price-item__option">Розовый фильтр</li>
               <li class="price-item__option">Смайлики</li>
@@ -132,27 +136,27 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
-      <div class="container">
+    <section class="contacts container">
         <div class="contacts__title">
           <span class="contacts__title-item">Остались вопросы?</span>
           <span class="contacts__title-item">Свяжитесь с нами</span>
         </div>
         <div class="contacts-item">
           <span class="contacts-item__title">Звоните:</span>
-          <a class="contacts-item__contact" href="tel:+7(812)555-66-66">+7(812)555-66-66</span>
+          <a class="contacts-item__contact" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
         </div>
         <div class="contacts-item">
           <span class="contacts-item__title">Пишите:</span>
-          <a class="contacts-item__contact" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</span>
+          <a class="contacts-item__contact" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts-item">
           <span class="contacts-item__title">Приезжайте в гости:</span>
           <span class="contacts-item__contact">ул. Большая Конюшенная, 19/8</span>
         </div>
-      </div>
     </section>
-    <section class="map"></section>
+    <section class="map container container--without-paddings">
+      <img src="/img/bg-map-mobile@1x.png" width="320" height="420">
+    </section>
   </main>
 
 </body>

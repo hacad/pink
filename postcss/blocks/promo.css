@@ -1,0 +1,18 @@
+.promo {
+  min-height: 300px;
+
+  color: $white;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  outline: 1px solid red;
+
+  &__title {
+    margin: 0;
+
+    font-size: $font-size-h1;
+    font-weight: calc($font-weight - 100);
+    text-align: center;
+  }
+}

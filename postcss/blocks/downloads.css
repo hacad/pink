@@ -1,0 +1,45 @@
+.downloads {
+  background-color: $dark;
+  color: $white;
+
+  &__link {
+    margin-right: 30px;
+
+    display: inline-block;
+    vertical-align: bottom;
+
+    background-repeat: no-repeat;
+
+    /*How to hide text correct?*/
+    font-size: 0;
+
+    &--apple {
+      width: 46px;
+      height: 56px;
+
+      background-image: url("../img/logo-apple.svg");
+
+    }
+
+    &--android {
+      width: 42px;
+      height: 47px;
+      background-image: url("../img/logo-android.svg");
+    }
+
+    &--windows {
+      width: 43px;
+      height: 41px;
+      background-image: url("../img/logo-microsoft.svg");
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  /*Why child margin affect outside of parent?*/
+  &__description {
+      margin: 0;
+    }
+}

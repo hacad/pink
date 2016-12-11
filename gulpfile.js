@@ -5,6 +5,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var precss = require("precss");
 var autoprefixer = require("autoprefixer");
+var calc = require("postcss-calc");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -12,6 +13,7 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(postcss([
       precss(),
+      calc(/*{precision: 0}*/),
       autoprefixer({browsers: [
         "last 2 versions"
       ]})

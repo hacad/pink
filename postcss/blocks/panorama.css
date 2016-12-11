@@ -1,0 +1,6 @@
+.panorama {
+  background-color: $white;
+  padding-bottom: 20px;
+
+  outline: 1px solid red;
+}

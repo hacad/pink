@@ -1,0 +1,5 @@
+.price {
+  background-color: $light-gray;
+
+  outline: 1px solid red;
+}

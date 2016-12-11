@@ -1,0 +1,23 @@
+input::-webkit-input-placeholder {
+    color: $gray-dark;
+}
+
+input::-moz-placeholder {
+    color: $gray-dark;
+}
+
+input:-ms-input-placeholder {
+    color: $gray-dark;
+}
+
+textarea::-webkit-input-placeholder {
+    color: $gray-dark;
+}
+
+textarea::-moz-placeholder {
+    color: $gray-dark;
+}
+
+textarea:-ms-input-placeholder {
+    color: $gray-dark;
+}

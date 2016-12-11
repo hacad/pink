@@ -1,0 +1,17 @@
+
+.reviews-item {
+  margin-bottom: 27px;
+
+  display: block;
+
+  text-align: center;
+
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: calc($font-weight + 300);
+  }
+
+  &__text {
+    line-height: $line-height;
+  }
+}

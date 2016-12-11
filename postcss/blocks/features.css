@@ -1,0 +1,30 @@
+.features {
+  background-color: $light-gray;
+
+  outline: 1px solid red;
+
+  &__image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+
+    max-width: 157px;
+    max-height: 320px;
+  }
+}
+
+.features-item {
+
+  &__title {
+    display: block;
+
+    font-size: $font-size-h2;
+    font-weight: calc($font-weight + 300);
+    text-align: center;
+    color: $gray-dark;
+  }
+
+  &__description {
+    text-align: center;
+  }
+}
