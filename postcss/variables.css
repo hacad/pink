@@ -20,4 +20,17 @@ $line-height-h1: 1.2;
 $line-height-h2: 1.3;
 $line-height-big: 2.2;
 
-$container-width: 280px;
+/*$container-width: 280px;*/
+$container-paddings: 20;
+
+$container-width: 87.5%;
+$container-width-tablet: 88.57142857142857%;
+$container-width-desktop: 97.91666666666667%;
+
+$screen-mobile: 320px;
+$screen-tablet: 660px;
+$screen-desktop: 960px;
+$screen-desktop-paddings: 120;
+
+@custom-media --screen-tablet (min-width: 660px);
+@custom-media --screen-desktop (min-width: 960px);

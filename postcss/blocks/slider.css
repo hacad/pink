@@ -1,0 +1,91 @@
+.slider {
+  & > input[type="radio"] {
+    display: none;
+  }
+
+  &__control-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    margin-right: 13px;
+
+    background-color: $gray;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__controls {
+    text-align: center;
+
+    @media (--screen-tablet) {
+      display: none;
+    }
+  }
+  /****************************************
+              reviews section
+  *****************************************/
+  & #btn-review-1:checked ~ #reviews-item-1,
+  & #btn-review-2:checked ~ #reviews-item-2,
+  & #btn-review-3:checked ~ #reviews-item-3 {
+    display: block;
+  }
+
+  & #btn-review-1:checked ~ &__controls > label[for="btn-review-1"],
+  & #btn-review-2:checked ~ &__controls > label[for="btn-review-2"],
+  & #btn-review-3:checked ~ &__controls > label[for="btn-review-3"] {
+    border: 3px solid $gray-dark;
+    background-color: $white;
+  }
+  /****************************************
+              reviews section
+  *****************************************/
+
+  /****************************************
+              price section
+  *****************************************/
+
+  & #btn-price-1:checked ~ .price-items > .price-items__header > li:nth-child(2),
+  & #btn-price-1:checked ~ .price-items > #price-item-1 li:nth-child(2),
+  & #btn-price-1:checked ~ .price-items > #price-item-2 li:nth-child(2),
+  & #btn-price-1:checked ~ .price-items > #price-item-3 li:nth-child(2),
+
+  & #btn-price-2:checked ~ .price-items > .price-items__header > li:nth-child(3),
+  & #btn-price-2:checked ~ .price-items > #price-item-1 li:nth-child(3),
+  & #btn-price-2:checked ~ .price-items > #price-item-2 li:nth-child(3),
+  & #btn-price-2:checked ~ .price-items > #price-item-3 li:nth-child(3),
+
+  & #btn-price-3:checked ~ .price-items > .price-items__header > li:nth-child(4),
+  & #btn-price-3:checked ~ .price-items > #price-item-1 li:nth-child(4),
+  & #btn-price-3:checked ~ .price-items > #price-item-2 li:nth-child(4),
+  & #btn-price-3:checked ~ .price-items > #price-item-3 li:nth-child(4) {
+    /*background: red;*/
+    display: table-cell;
+  }
+
+  & #btn-price-1:checked ~ &__controls > label[for="btn-price-1"],
+  & #btn-price-2:checked ~ &__controls > label[for="btn-price-2"],
+  & #btn-price-3:checked ~ &__controls > label[for="btn-price-3"] {
+    border: 3px solid $gray-dark;
+    background-color: $white;
+  }
+
+
+  /*
+  & #btn-price-1:checked ~ .price-items #price-item-1,
+  & #btn-price-2:checked ~ .price-items #price-item-2,
+  & #btn-price-3:checked ~ .price-items #price-item-3 {
+    display: block;
+  }
+
+  & #btn-price-1:checked ~ &__controls > label[for="btn-price-1"],
+  & #btn-price-2:checked ~ &__controls > label[for="btn-price-2"],
+  & #btn-price-3:checked ~ &__controls > label[for="btn-price-3"] {
+    border: 3px solid $gray-dark;
+    background-color: $white;
+  }
+  */
+  /****************************************
+              price section
+  *****************************************/
+}

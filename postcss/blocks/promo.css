@@ -1,18 +1,62 @@
 .promo {
-  min-height: 300px;
-
   color: $white;
+  padding-top: 300px;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+                    url("../img/bg-back-mobile@1x.jpg");
+  background-position: left 10%, center center;
+  background-size: auto, cover;
   background-repeat: no-repeat;
+
+  @media (--screen-tablet) {
+    padding: 12% 0;
+
+    background-position: bottom center, center center;
+  }
+
+  @media (--screen-desktop) {
+    padding-top: 8.33%;
+    padding-bottom: 10.41%;
+  }
+
+  &--form,
+  &--photo {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__container {
+    @media (--screen-tablet) {
+      width: $container-width-tablet;
+      max-width: $screen-desktop;
+      margin: 0 auto;
+    }
+
+    @media (--screen-desktop) {
+      width: $container-width-desktop;
+    }
+  }
 
   outline: 1px solid red;
 
   &__title {
+    display: none;
     margin: 0;
+    max-width: $screen-desktop;
 
     font-size: $font-size-h1;
+    line-height: $line-height-h1;
     font-weight: calc($font-weight - 100);
-    text-align: center;
+
+    @media (--screen-tablet) {
+      display: block;
+      margin-left: calc($container-paddings + 0)px;
+    }
+
+    &--form,
+    &--photo {
+      display: block;
+    }
   }
 }

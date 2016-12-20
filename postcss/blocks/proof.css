@@ -1,0 +1,38 @@
+.proof {
+  display: none;
+
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: left;
+  color: $gray-dark;
+
+  background-color: $white;
+
+  outline: 1px solid red;
+  @media(--screen-tablet){
+    display: block;
+  }
+
+  &__container {
+    @media(--screen-tablet){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    margin-left: 50px;
+  }
+
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: calc($font-weight + 300);
+  }
+
+  &__link {
+    font-size: $font-size;
+    color: $pink;
+  }
+}

@@ -1,0 +1,27 @@
+.timer-img {
+  position: relative;
+  width: 298px;
+  height: 345px;
+
+  &::before {
+    position: absolute;
+    content: "24";
+    top: 85px;
+    left: 38px;
+
+    width: 200px;
+    height: 200px;
+
+    font-family: $font-family;
+    font-size: 100px;
+    font-weight: calc($font-weight + 300);
+    line-height: 200px;
+    text-align: center;
+    color: $pink;
+
+    border: 12px solid $pink;
+    border-radius: 50%;
+    background-color: $white;
+    z-index: 10;
+  }
+}
