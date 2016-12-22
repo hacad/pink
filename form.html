@@ -45,39 +45,37 @@
         </div>
       </section>
       <form class="form-contest">
-        <div class="form-section form-section--name">
-          <div class="container">
-            <fieldset class="form-section__item form-section__item--name">
-              <div class="form-group">
-                <label class="form-group__label" for="name-field">Фамилия:</label>
-                <input class="form-group__field" type="text" name="lastname" id="lastname-field" placeholder="Укажите фамилию *">
-              </div>
-              <div class="form-group">
-                <label class="form-group__label" for="lastname-field">Имя:</label>
-                <input class="form-group__field" type="text" name="lastname" id="name-field" placeholder="Введите ваше имя *">
-              </div>
-              <div class="form-group">
-                <label class="form-group__label" for="patronymic-field">Отчество:</label>
-                <input class="form-group__field" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
-              </div>
-            </fieldset>
+        <div class="container">
+          <div class="form-section form-section--name">
+              <fieldset class="form-section__item form-section__item--name">
+                <div class="form-group">
+                  <label class="form-group__label" for="name-field">Фамилия:</label>
+                  <input class="form-group__field" type="text" name="lastname" id="lastname-field" placeholder="Укажите фамилию *">
+                </div>
+                <div class="form-group">
+                  <label class="form-group__label" for="lastname-field">Имя:</label>
+                  <input class="form-group__field" type="text" name="lastname" id="name-field" placeholder="Введите ваше имя *">
+                </div>
+                <div class="form-group">
+                  <label class="form-group__label" for="patronymic-field">Отчество:</label>
+                  <input class="form-group__field" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+                </div>
+              </fieldset>
           </div>
-        </div>
-        <div class="form-section form-section--achievements form-section--gray">
-          <div class="container">
+          <div class="form-section form-section--achievements form-section--gray">
             <fieldset class="form-section__item">
               <legend class="form-section__title">Ваши безбашенные достижения в путешествии</legend>
               <div class="form-section__fieldset-flex-container">
                 <div>
                   <div class="form-section__form-section-item form-section__form-section-item--achievements">
-                    <label class="label" for="shark-selfie-field">
-                      <input class="checkbox" type="checkbox" name="shark-selfie" id="shark-selfie-field">
+                    <label class="checkbox" for="shark-selfie-field">
+                      <input class="checkbox-input" type="checkbox" name="shark-selfie" id="shark-selfie-field">
                       Сделал селфи с акулой
                     </label>
                   </div>
                   <div class="form-section__form-section-item form-section__form-section-item--achievements">
                     <label class="label" for="sunburn-field">
-                      <input class="checkbox" type="checkbox" name="sunburn" id="sunburn-field">
+                      <input type="checkbox" name="sunburn" id="sunburn-field">
                       Обгорел на пляже
                     </label>
                   </div>
@@ -85,13 +83,13 @@
                 <div>
                   <div class="form-section__form-section-item form-section__form-section-item--achievements">
                     <label class="label" for="chuck-field">
-                      <input class="checkbox" type="checkbox" name="chuck" id="chuck-field">
+                      <input type="checkbox" name="chuck" id="chuck-field">
                       Видел Чака Норриса
                     </label>
                   </div>
                   <div class="form-section__form-section-item form-section__form-section-item--achievements">
                     <label class="label" for="souvenir-field">
-                      <input class="checkbox" type="checkbox" name="souvenir" id="souvenir-field">
+                      <input type="checkbox" name="souvenir" id="souvenir-field">
                       Накупил сувениров
                     </label>
                   </div>
@@ -99,13 +97,13 @@
                 <div>
                   <div class="form-section__form-section-item form-section__form-section-item--achievements">
                     <label class="label" for="tower-field">
-                      <input class="checkbox" type="checkbox" name="tower" id="tower-field">
+                      <input type="checkbox" name="tower" id="tower-field">
                       Удержал башню
                     </label>
                   </div>
                   <div class="form-section__form-section-item form-section__form-section-item--achievements">
                     <label class="label" for="hotel-field">
-                      <input class="checkbox" type="checkbox" name="hotel" id="hotel-field">
+                      <input type="checkbox" name="hotel" id="hotel-field">
                       Разгромил отель
                     </label>
                   </div>
@@ -113,9 +111,7 @@
               </div>
             </fieldset>
           </div>
-        </div>
-        <div class="form-section form-section--contacts">
-          <div class="container">
+          <div class="form-section form-section--contacts">
             <fieldset class="form-section__item">
               <legend class="form-section__title">Контактная информация</legend>
               <div class="form-section__fieldset-flex-container">
@@ -134,9 +130,7 @@
               </div>
             </fieldset>
           </div>
-        </div>
-        <div class="form-section form-section--app form-section--gray">
-          <div class="container">
+          <div class="form-section form-section--app form-section--gray">
             <fieldset class="form-section__item">
               <legend class="form-section__title">С каким приложением путешествовали?</legend>
               <div>
@@ -159,17 +153,13 @@
               </div>
             </fieldset>
           </div>
-        </div>
-        <div class="form-section form-section--emotions">
-          <div class="container">
+          <div class="form-section form-section--emotions">
             <fieldset class="form-section__item">
               <legend class="form-section__title">Опишите свои эмоции</legend>
               <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="emotions" id="emotions-field"></textarea>
             </fieldset>
           </div>
-        </div>
-        <div class="form-section form-section--footer form-contest__form-info">
-          <div class="container">
+          <div class="form-section form-section--footer form-contest__form-info">
             <button class="btn btn--green" type="submit">Отправить форму</button>
             <span class="form-contest__asterisk">*</span>&mdash; Обязательные поля
           </div>
