@@ -5,6 +5,13 @@
 
   outline: 1px solid red;
 
+  &__container {
+    @media (--screen-tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__title {
     margin: 0;
 

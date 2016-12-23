@@ -6,6 +6,8 @@ var postcss = require("gulp-postcss");
 var precss = require("precss");
 var autoprefixer = require("autoprefixer");
 var calc = require("postcss-calc");
+var customMedia = require("postcss-custom-media");
+var forloop = require("postcss-for");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -14,6 +16,8 @@ gulp.task("style", function() {
     .pipe(postcss([
       precss(),
       calc(/*{precision: 0}*/),
+      customMedia(),
+      forloop(),
       autoprefixer({browsers: [
         "last 2 versions"
       ]})

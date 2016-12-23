@@ -1,12 +1,24 @@
 .container {
   width: $container-width;
+  max-width: $screen-desktop;
   margin: 0 auto;
-  padding: 0 20px;
+  /*padding: 0 6.25%;*/
 
   outline: 1px solid lightblue;
-}
 
-.container--without-paddings {
-  padding: 0;
-  width: calc($container-width + 40);
+  @media (--screen-tablet) {
+    width: $container-width-tablet;
+    margin: 0 auto;
+    /*padding: 0 5.714285714285714%;*/
+    padding: 0;
+    outline: 1px solid lightblue;
+  }
+
+  @media (--screen-desktop) {
+    width: $container-width-desktop;
+    margin: 0 auto;
+    padding: 0;
+
+    outline: 1px solid lightblue;
+  }
 }

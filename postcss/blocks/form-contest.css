@@ -1,3 +1,28 @@
 .form-contest {
+  background-color: $white;
+
+  & .container {
+    @media(--screen-tablet){
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (--screen-desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      /*padding: 0 calc($screen-desktop-paddings)px;*/
+    }
+  }
+
+  /*@media (--screen-desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /*padding: 0 calc($screen-desktop-paddings)px;* /
+  }*/
+
   outline: 1px solid red;
 }

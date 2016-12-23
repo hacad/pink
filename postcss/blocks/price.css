@@ -3,3 +3,59 @@
 
   outline: 1px solid red;
 }
+
+.price-items {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+
+  border-collapse: collapse;
+
+  &__header {
+    display: table-header-group;
+  }
+
+  & > ul {
+    display: table-row;
+  }
+
+  & > ul > li {
+    display: table-cell;
+    margin: auto auto;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid $gray;
+  }
+
+  &__header > li:nth-child(3),
+  &__header > li:nth-child(4),
+
+  &__item > li:nth-child(3),
+  &__item > li:nth-child(4) {
+    display: none;
+    /*background: yellow;*/
+  }
+
+  &__header > li:nth-child(2),
+  &__item > li:nth-child(2) {
+    /*background: lightgreen;*/
+    display: none;
+  }
+
+  @media (--screen-tablet) {
+    &__header > li:nth-child(3),
+    &__header > li:nth-child(4),
+
+    &__item > li:nth-child(3),
+    &__item > li:nth-child(4) {
+      display: table-cell;
+      /*background: yellow;*/
+    }
+
+    &__header > li:nth-child(2),
+    &__item > li:nth-child(2) {
+      /*background: lightgreen;*/
+      display: table-cell;
+    }
+  }
+}

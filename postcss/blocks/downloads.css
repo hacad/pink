@@ -2,6 +2,22 @@
   background-color: $dark;
   color: $white;
 
+  @media (--screen-tablet) {
+    margin: 0;
+    max-width: $screen-mobile;
+
+    background: none;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+
   &__link {
     margin-right: 30px;
 
@@ -10,7 +26,6 @@
 
     background-repeat: no-repeat;
 
-    /*How to hide text correct?*/
     font-size: 0;
 
     &--apple {
@@ -18,7 +33,6 @@
       height: 56px;
 
       background-image: url("../img/logo-apple.svg");
-
     }
 
     &--android {
@@ -41,5 +55,14 @@
   /*Why child margin affect outside of parent?*/
   &__description {
       margin: 0;
+  }
+
+  &__container {
+    @media (--screen-tablet) {
+      margin: 0;
+      max-width: $screen-mobile;
+
+      background: none;
     }
+  }
 }

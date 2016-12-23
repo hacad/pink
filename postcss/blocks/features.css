@@ -1,19 +1,39 @@
 .features {
   background-color: $light-gray;
 
-  outline: 1px solid red;
-
-  &__image {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 41px;
-
-    max-width: 157px;
-    max-height: 320px;
+  @media(--screen-tablet){
+    position: relative;
   }
+
+  &__container {
+    @media (--screen-tablet) {
+      max-width: $screen-mobile;
+      margin-right: 3%;
+      float: right;
+    }
+
+    @media (--screen-desktop) {
+      max-width: $container-width-desktop;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 100px;
+    }
+  }
+
+  outline: 1px solid red;
 }
 
 .features-item {
+  max-width: $container-width;
+  margin-right: calc($container-paddings + 0)px;
+  margin-left: auto;
+
+  @media (--screen-desktop) {
+    position: relative;
+
+    padding-top: 160px;
+  }
 
   &__title {
     display: block;
@@ -22,9 +42,72 @@
     font-weight: calc($font-weight + 300);
     text-align: center;
     color: $gray-dark;
+
+    @media(--screen-tablet) {
+      text-align: left;
+    }
+
+  @media (--screen-desktop) {
+      text-align: center;
+    }
+  }
+
+  &:last-child &__description {
+    margin-bottom: 0;
   }
 
   &__description {
     text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media(--screen-tablet) {
+      text-align: left;
+    }
+
+    @media (--screen-desktop) {
+      text-align: center;
+    }
   }
+
+  &__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+
+    max-width: 157px;
+    max-height: 320px;
+
+    @for $i from 1 to 2 {
+      &--image$i {
+        display: none;
+      }
+    }
+
+    @media(--screen-tablet) {
+      position: absolute;
+      left: 100px;
+      top: 10px;
+    }
+
+    @media (--screen-desktop){
+      @for $i from 1 to 3 {
+        &--image$i {
+          position: absolute;
+          top: -160px;
+          left: 0;
+          right: 0;
+
+          display: block;
+          width: 157px;
+          height: 320px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
 }

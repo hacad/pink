@@ -1,0 +1,42 @@
+.form-group {
+  @media (--screen-tablet) {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &--vertical-reverse {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  &--contacts {
+    @media (--screen-desktop) {
+      width: 100px;
+    }
+  }
+
+  &__label,
+  input[type="text"] {
+    display: block;
+  }
+
+  &__label {
+    @media (--screen-tablet){
+      flex-shrink: 0;
+
+      &--vertical-reverse {
+        order: 2;
+      }
+    }
+  }
+
+  &__field {
+    width: 100%;
+    @media (--screen-tablet){
+      flex-grow: 1;
+      min-width: 100px;
+      /*where is border?*/
+    }
+  }
+}
