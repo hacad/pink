@@ -1,5 +1,32 @@
 .main-header {
-  background-color: $gray-dark;
+  position: fixed;
+  z-index: 20;
 
-  outline: 1px solid red;
+  padding: 22px 0;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  /*outline: 1px solid red;*/
+
+  @media (--screen-tablet) {
+    padding: 28px 0 40px 0;
+  }
+
+  @media (--screen-desktop) {
+    position: absolute;
+
+    padding-top: 27px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (--screen-desktop) {
+      flex-wrap: nowrap;
+    }
+  }
 }

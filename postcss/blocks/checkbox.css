@@ -1,0 +1,98 @@
+.checkbox {
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+
+    display: block;
+    padding-left: 70px;
+
+    min-height: 40px;
+
+    font-size: $font-size-big;
+    line-height: $line-height;
+
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (--screen-tablet) {
+      padding-left: 60px;
+    }
+  }
+
+  &__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    /*transform: translateY(-50%);*/
+    /*box-shadow: 0 0 0 2px $gray;*/
+    border: 2px solid $gray;
+    border-radius: 2px;
+    background-color: $white;
+    transition: border 0.2s;
+  }
+
+  &__label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+
+    width: 22px;
+    height: 11px;
+
+    /*transform: translateY(-50%) rotate(-45deg);*/
+    transform: rotate(-45deg);
+    background-color: transparent;
+    border-left: 3px solid $pink;
+    border-bottom: 3px solid $pink;
+    border-radius: 2px;
+
+    opacity: 0;
+    /*display: none;*/
+    transition: opacity 0.2s;
+  }
+
+  &__input:checked + &__label::after{
+    opacity: 1;
+    /*display: block;
+    top: 50%;*/
+  }
+
+  &__label:hover::before {
+    /*box-shadow: 0 0 0 2px $gray-dark;*/
+    border-color: $gray-dark;
+  }
+
+
+  &__label:active::before {
+    /*box-shadow: 0 0 0 2px $pink;*/
+    border-color: $pink;
+  }
+
+  &__input[disabled] + &__label {
+    cursor: default;
+  }
+
+
+  &__input[disabled] + &__label::before,
+  &__input[disabled] + &__label:focus::before,
+  &__input[disabled] + &__label:active::before,
+  &__input[disabled] + &__label:hover::before {
+    border: 2px solid $gray;
+    background-color: $gray;
+  }
+
+
+  &__input:checked:disabled + &__label::after {
+    border-color: $pink;
+  }
+}

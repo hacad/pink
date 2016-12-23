@@ -3,12 +3,18 @@
 
   @media(--screen-tablet){
     position: relative;
+
+    padding-bottom: 25px;
   }
 
   &__container {
+    padding-top: 55px;
+
     @media (--screen-tablet) {
+      padding-top: 30px;
       max-width: $screen-mobile;
       margin-right: 3%;
+      margin-bottom: 20px;
       float: right;
     }
 
@@ -17,17 +23,28 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 100px;
+      padding-top: 87px;
+      margin: 0 auto;
+      float: none;
     }
   }
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .features-item {
   max-width: $container-width;
-  margin-right: calc($container-paddings + 0)px;
-  margin-left: auto;
+  margin: 0 auto 23px auto;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (--screen-tablet) {
+    /*margin-right: 12px;
+    margin-left: auto;*/
+    margin: 0 12px 35px auto;
+  }
 
   @media (--screen-desktop) {
     position: relative;
@@ -36,6 +53,8 @@
   }
 
   &__title {
+    margin-bottom: 20px;
+
     display: block;
 
     font-size: $font-size-h2;
@@ -47,16 +66,34 @@
       text-align: left;
     }
 
-  @media (--screen-desktop) {
+    @media (--screen-desktop) {
+      padding-right: 30px;
+
       text-align: center;
+      font-size: $font-size-h2--tablet;
     }
   }
 
   &:last-child &__description {
     margin-bottom: 0;
+
+    @media (--screen-desktop) {
+      margin: 0 auto;
+      padding-left: 30px;
+    }
+  }
+
+  &:last-child &__title {
+    @media (--screen-desktop) {
+      padding-right: 0;
+    }
   }
 
   &__description {
+    margin: 0;
+
+    font-size: $font-size;
+    line-height: $line-height;
     text-align: center;
 
     &:last-child {
@@ -64,16 +101,21 @@
     }
 
     @media(--screen-tablet) {
+      width: 310px;
+
       text-align: left;
     }
 
     @media (--screen-desktop) {
+      width: 270px;
+
       text-align: center;
+      font-size: $font-size-big;
     }
   }
 
   &__image {
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
     margin-top: 41px;
@@ -81,33 +123,42 @@
     max-width: 157px;
     max-height: 320px;
 
-    @for $i from 1 to 2 {
-      &--image$i {
-        display: none;
-      }
+    &--image3 {
+      position: relative;
+      display: block;
     }
 
     @media(--screen-tablet) {
       position: absolute;
-      left: 100px;
-      top: 10px;
+      left: 41px;
+      top: -23px;
+
+      max-width: 268px;
+      max-height: 481px;
     }
 
     @media (--screen-desktop){
       @for $i from 1 to 3 {
         &--image$i {
           position: absolute;
-          top: -160px;
-          left: 0;
+          top: -205px;
+          left: 8px;
           right: 0;
 
           display: block;
-          width: 157px;
-          height: 320px;
+          width: 292px;
+          height: 302px;
           margin: 0 auto;
         }
       }
+
+      &--image1 {
+        left: -45px;
+      }
+
+      &--image2 {
+        left: -34px;
+      }
     }
   }
-
 }

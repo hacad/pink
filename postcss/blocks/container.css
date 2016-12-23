@@ -4,14 +4,14 @@
   margin: 0 auto;
   /*padding: 0 6.25%;*/
 
-  outline: 1px solid lightblue;
+  /*outline: 1px solid lightblue;*/
 
   @media (--screen-tablet) {
     width: $container-width-tablet;
     margin: 0 auto;
     /*padding: 0 5.714285714285714%;*/
     padding: 0;
-    outline: 1px solid lightblue;
+    /*outline: 1px solid lightblue;*/
   }
 
   @media (--screen-desktop) {
@@ -19,6 +19,6 @@
     margin: 0 auto;
     padding: 0;
 
-    outline: 1px solid lightblue;
+    /*outline: 1px solid lightblue;*/
   }
 }

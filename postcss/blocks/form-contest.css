@@ -11,18 +11,15 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-
-      /*padding: 0 calc($screen-desktop-paddings)px;*/
     }
   }
 
-  /*@media (--screen-desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  &__additional-text {
+    display: none;
 
-    /*padding: 0 calc($screen-desktop-paddings)px;* /
-  }*/
-
-  outline: 1px solid red;
+    @media (--screen-desktop) {
+      display: inline-block;
+    }
+  }
+  /*outline: 1px solid red;*/
 }

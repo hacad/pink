@@ -2,8 +2,11 @@ $pink: #d22856;
 $gray-dark: #283645;
 $white: #ffffff;
 $light-gray: #f2f2f2;
+$lightest-gray: #dddfe0;
 $gray: #949aa1;
 $dark: #1d2631;
+$green: #2aab6d;
+$red: #f25b26;
 
 $font-family: "Open Sans", "Arial", sans-serif;
 $font-weight: 400;
@@ -15,22 +18,28 @@ $font-size-big: 1.125rem;
 $font-size-h1: 1.5rem;
 $font-size-h2: 1.125rem;
 
+$font-size-h1--tablet: 2.5rem;
+$font-size-h2--tablet: 1.875rem;
+
+$font-size-h1--desktop: 3.125rem;
+
 $line-height: 1.6;
 $line-height-h1: 1.2;
 $line-height-h2: 1.3;
 $line-height-big: 2.2;
 
 /*$container-width: 280px;*/
-$container-paddings: 20;
+$container-padding: 20;
 
-$container-width: 87.5%;
-$container-width-tablet: 88.57142857142857%;
-$container-width-desktop: 97.91666666666667%;
+$container-width: 87.5%; /*280px/320px*/
+$container-width-tablet: 88.57142857142857%; /*620px/700px*/
+$container-width-desktop: 97.91666666666667%; /*940px/960px*/
 
 $screen-mobile: 320px;
 $screen-tablet: 660px;
 $screen-desktop: 960px;
-$screen-desktop-paddings: 120;
+$screen-desktop-padding: 10;
 
+@custom-media --screen-mobile (min-width: 320px);
 @custom-media --screen-tablet (min-width: 660px);
 @custom-media --screen-desktop (min-width: 960px);
