@@ -1,0 +1,137 @@
+.page-description {
+  padding-top: 37px;
+  padding-bottom: 32px;
+
+  background-color: $white;
+  /*outline: 1px solid red;*/
+
+  @media (--screen-tablet) {
+    padding-top: 45px;
+  }
+
+  @media (--screen-desktop) {
+    padding-top: 70px;
+    padding-bottom: 58px;
+  }
+
+  &--photo {
+    padding-bottom: 43px;
+
+    @media (--screen-desktop) {
+      padding-bottom: 53px;
+    }
+  }
+
+  &--photo2 {
+    padding-top: 30px;
+
+    @media (--screen-tablet) {
+      padding-top: 12px;
+    }
+
+    @media (--screen-desktop) {
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &--form {
+    padding-bottom: 18px;
+
+    @media (--screen-desktop) {
+      padding-top: 89px;
+    }
+  }
+
+  &__container {
+    padding: 5px 0 0 15px;
+
+    @media (--screen-desktop) {
+      padding: 0;
+    }
+
+    &--photo {
+      padding: 7px 0 7px 20px;
+      margin: 0;
+
+      @media (--screen-tablet) {
+        padding-left: 38px;
+      }
+
+      @media (--screen-desktop) {
+        box-sizing: border-box;
+        width: 46%;
+        margin: 0 auto;
+        padding: 20px 30px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    display: block;
+
+    font-size: $font-size-h1;
+    line-height: $line-height-h1;
+    font-weight: calc($font-weight - 100);
+    text-align: center;
+    text-decoration: none;
+    color: $gray-dark;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (--screen-tablet) {
+      margin-bottom: 0;
+      font-size: $font-size-h1--tablet;
+    }
+
+    @media (--screen-desktop) {
+      font-size: $font-size-h1--desktop;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+
+    line-height: $line-height-big;
+    font-size: $font-size;
+
+    @media (--screen-tablet) {
+      padding-top: 35px;
+      padding-bottom: 14px;
+
+      font-size: $font-size-big;
+    }
+
+    &--photo,
+    &--form {
+      max-width: 89%;
+
+      text-align: center;
+
+      @media (--screen-desktop) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    &--form {
+      max-width: 100%;
+
+      @media (--screen-tablet) {
+        max-width: 89%;
+      }
+    }
+  }
+
+  &__additional-text {
+    display: none;
+
+    @media (--screen-desktop) {
+      display: inline-block;
+    }
+  }
+}

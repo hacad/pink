@@ -1,3 +1,24 @@
-.copyright__logo {
-  fill: $pink;
+.copyright {
+  @media (--screen-tablet) {
+    padding-top: 38px;
+  }
+
+  @media (--screen-desktop) {
+    padding-right: 20px;
+  }
+
+  &__text,
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__text {
+    @media (--screen-desktop) {
+      margin-right: 10px;
+    }
+  }
+  &__logo {
+    fill: $pink;
+  }
 }

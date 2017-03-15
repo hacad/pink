@@ -1,0 +1,61 @@
+.logo {
+  display: inline-block;
+  vertical-align: bottom;
+
+  font-size: 0;
+
+  &--footer {
+    @media (--screen-tablet) {
+      padding-top: 17px;
+    }
+  }
+  
+  &__svg {
+    display: inline-block;
+
+    @media (--screen-tablet) {
+      width: 146.3px;
+      height: 40.375px;
+    }
+
+    @media (--screen-desktop) {
+      display: none;
+    }
+
+    &--header {
+      & path {
+        fill: $white;
+      }
+    }
+
+    &:hover path {
+      fill: $pink;
+    }
+
+    &--mobile {
+      @media (--screen-tablet) {
+        display: none;
+      }
+    }
+    
+    &--tablet {
+      display: none;
+
+      @media (--screen-tablet) {
+        display: inline-block;
+      }
+
+      @media (--screen-desktop) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (--screen-desktop) {
+        display: inline-block;
+      }
+    }
+  }
+}

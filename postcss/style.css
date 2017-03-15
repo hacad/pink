@@ -1,14 +1,17 @@
 @import "./fonts.css";
 @import "./variables.css";
+@import "./mixin.css";
 
 @import "./blocks/btn.css";
 @import "./blocks/input.css";
 @import "./blocks/label.css";
+@import "./blocks/menu.css";
 @import "./blocks/main-header.css";
 @import "./blocks/navigation.css";
 @import "./blocks/container.css";
-@import "./blocks/main-content.css";
+@import "./blocks/page-description.css";
 @import "./blocks/contacts.css";
+@import "./blocks/contacts-item.css";
 @import "./blocks/downloads.css";
 @import "./blocks/promo.css";
 @import "./blocks/features.css";
@@ -19,18 +22,21 @@
 @import "./blocks/reviews.css";
 @import "./blocks/reviews-item.css";
 @import "./blocks/price.css";
-@import "./blocks/price-item.css";
 
 @import "./blocks/panorama.css";
 @import "./blocks/user-photo.css";
 @import "./blocks/user-photo-container.css";
 @import "./blocks/upload.css";
 
+@import "./blocks/checkbox.css";
+@import "./blocks/radio.css";
 @import "./blocks/form-section.css";
 @import "./blocks/form-contest.css";
 @import "./blocks/form-group.css";
 
 @import "./blocks/map.css";
+@import "./blocks/logo.css";
+@import "./blocks/social.css";
 @import "./blocks/main-footer.css";
 @import "./blocks/copyright.css";
 

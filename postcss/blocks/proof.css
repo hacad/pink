@@ -8,31 +8,75 @@
 
   background-color: $white;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
   @media(--screen-tablet){
     display: block;
   }
 
+  @media (--screen-desktop) {
+    background-color: $light-gray;
+    padding-bottom: 37px;
+  }
+
   &__container {
     @media(--screen-tablet){
+      padding-top: 45px;
+      padding-bottom: 50px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+    }
+
+    @media (--screen-desktop) {
+      padding-top: 4px;
+      padding-bottom: 0;
     }
   }
 
   &__content {
-    margin-left: 50px;
+    margin-left: 75px;
+
+    @media (--screen-tablet) {
+      /*padding-top: 50px;*/
+      padding-top: 9%;
+    }
+
+    @media (--screen-desktop) {
+      padding-top: 9.5%;
+    }
   }
 
   &__title {
     font-size: $font-size-h2;
     font-weight: calc($font-weight + 300);
+    line-height: $line-height-h1;
+
+    @media (--screen-tablet) {
+      max-width: 200px;
+      margin: 0 0 15px 0;
+
+      font-size: $font-size-h2--tablet;
+    }
+
+    @media (--screen-desktop) {
+      max-width: 100%;
+      margin-bottom: 22px;
+    }
   }
 
+  &__text {
+    @media (--screen-desktop) {
+      margin-bottom: 38px;
+      font-size: $font-size-big;
+    }
+  }
   &__link {
     font-size: $font-size;
     color: $pink;
+
+    @media (--screen-desktop) {
+      font-size: $font-size-big;
+    }
   }
 }

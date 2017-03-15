@@ -3,5 +3,9 @@
 
   background-color: $white;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
+
+  @media (--screen-desktop) {
+    padding-bottom: 37px;
+  }
 }

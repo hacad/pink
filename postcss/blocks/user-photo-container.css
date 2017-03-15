@@ -1,5 +1,9 @@
 .user-photo-container {
   background-color: $white;
 
-  outline: 1px solid red;
+  @media (--screen-tablet) {
+    padding-top: 14px;
+  }
+
+  /*outline: 1px solid red;*/
 }

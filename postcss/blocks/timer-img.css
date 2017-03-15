@@ -1,27 +1,64 @@
 .timer-img {
   position: relative;
-  width: 298px;
-  height: 345px;
+  width: 235px;
+  height: 300px;
+
+  @media (--screen-desktop) {
+    width: 297px;
+    height: 405px;
+  }
 
   &::before {
     position: absolute;
     content: "24";
-    top: 85px;
-    left: 38px;
+    top: 70px;
+    left: 18px;
+    z-index: 10;
 
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
 
     font-family: $font-family;
     font-size: 100px;
     font-weight: calc($font-weight + 300);
-    line-height: 200px;
+    line-height: 175px;
     text-align: center;
     color: $pink;
 
     border: 12px solid $pink;
     border-radius: 50%;
     background-color: $white;
-    z-index: 10;
+
+    @media (--screen-desktop) {
+      top: 66px;
+      left: 30px;
+
+      width: 219px;
+      height: 219px;
+
+      line-height: 200px;
+      font-size: 120px;
+
+      border-width: 18px;
+    }
+  }
+
+  &__img {
+    @media (--screen-tablet) {
+      position: relative;
+      top: 16px;
+      left: -17px;
+
+      width: 273px;
+      height: 279px;
+    }
+
+    @media (--screen-desktop) {
+      top: -6px;
+      left: -6px;
+
+      width: 330px;
+      height: 348px;
+    }
   }
 }

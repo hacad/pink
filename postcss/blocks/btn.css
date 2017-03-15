@@ -1,21 +1,53 @@
 .btn {
   display: block;
-  margin-bottom: 30px;
+  vertical-align: top;
+  padding: 13px 15px 15px;
 
-  line-height: $line-height-h1;
+  font-weight: calc($font-weight + 300);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  border: 3px solid $white;
+  border-radius: 30px;
+  transition: all .3s;
+  cursor: pointer;
 
   &--download {
     padding-top: 14px;
     padding-bottom: 14px;
 
     font-size: $font-size-big;
-    font-weight: calc($font-size + 300);
+    font-weight: calc($font-weight + 300);
     text-decoration: none;
     color: $white;
     text-align: center;
 
-    border: 3px solid $text--white;
+    border: 3px solid $white;
     border-radius: 27px;
-    border: 1px solid $white;
+  }
+
+  &--green {
+    background-color: $green;
+  }
+
+  &--pink {
+    background-color: transparent;
+    border-color: $pink;
+    color: $pink;
+  }
+
+  &--gray {
+    background-color: transparent;
+    border-color: $lightest-gray;
+    color: $lightest-gray;
+  }
+
+  &--form-submit {
+    text-transform: uppercase;
+    color: $white;
+
+    border: none;
+    border-radius: 2px;
   }
 }

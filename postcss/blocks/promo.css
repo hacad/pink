@@ -1,22 +1,54 @@
 .promo {
+  padding-top: 460px;
+
   color: $white;
-  padding-top: 300px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png"),
                     url("../img/bg-back-mobile@1x.jpg");
-  background-position: left 10%, center center;
+  background-position: left 39%, center center;
   background-size: auto, cover;
   background-repeat: no-repeat;
 
-  @media (--screen-tablet) {
-    padding: 12% 0;
+  @media (--screen-mobile) and (min-resolution: 144dpi), (--screen-mobile) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 80%, cover;
+  }
 
+  @media (--screen-tablet) {
+    padding-top: 29%;
+    padding-bottom: 13.7%;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png"),
+                    url("../img/bg-back-tablet@1x.jpg");
     background-position: bottom center, center center;
   }
 
+  @media (--screen-tablet) and (min-resolution: 144dpi), (--screen-tablet) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    background-size: 100%, cover;
+  }
+
   @media (--screen-desktop) {
-    padding-top: 8.33%;
-    padding-bottom: 10.41%;
+    padding-top: 15%;
+    padding-bottom: 7%;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png"),
+                      url("../img/bg-back-desktop@1x.jpg");
+    background-position: 60% 100%, center center;
+  }
+
+  @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+  }
+
+  &--index {
+    @media (--screen-tablet) {
+      padding-bottom: 15%;
+    }
+
+    @media (--screen-desktop) {
+      padding-bottom: 7%;
+    }
   }
 
   &--form,
@@ -24,6 +56,57 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-size: cover;
     background-position: center center;
+
+    @media (--screen-mobile) and (min-resolution: 144dpi), (--screen-mobile) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+
+    @media (--screen-tablet) and (min-resolution: 144dpi), (--screen-tablet) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  &--form,
+  &--photo {
+    min-height: 140px;
+    padding-top: 96px;
+
+    @media (--screen-tablet) {
+      padding-top: 180px;
+      padding-bottom: 120px;
+    }
+
+    @media (--screen-desktop) {
+      padding-bottom: 88px;
+    }
+  }
+
+  &--photo {
+    padding-top: 102px;
+
+    @media (--screen-tablet) {
+      padding-top: 181px;
+    }
+
+    @media (--screen-desktop) {
+      padding-top: 180px;
+      padding-bottom: 88px;
+    }
+  }
+
+  &--form {
+    @media (--screen-tablet) {
+      padding-bottom: 80px;
+    }
+
+    @media (--screen-desktop) {
+      padding-top: 188px;
+      padding-bottom: 81px;
+    }
   }
 
   &__container {
@@ -38,7 +121,7 @@
     }
   }
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 
   &__title {
     display: none;
@@ -51,12 +134,43 @@
 
     @media (--screen-tablet) {
       display: block;
-      margin-left: calc($container-paddings + 0)px;
+      margin-left: calc($container-padding + 0)px;
+
+      font-size: $font-size-h1--tablet;
+    }
+
+    &--main {
+      max-width: calc($screen-mobile - $container-padding*2);
+      margin-left: 0;
+      margin-right: auto;
+
+      text-align: center;
+
+      @media (--screen-desktop) {
+        margin-bottom: 50px;
+      }
     }
 
     &--form,
     &--photo {
       display: block;
+
+      width: 62.5%;
+      margin: 0 auto;
+
+      text-align: center;
+
+      @media (--screen-tablet) {
+        font-size: $font-size-h1--desktop;
+      }
+    }
+
+    &--form {
+      width: 72%;
+
+      @media (--screen-tablet) {
+        width: 81%;
+      }
     }
   }
 }

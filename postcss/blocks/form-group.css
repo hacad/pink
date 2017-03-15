@@ -1,7 +1,14 @@
 .form-group {
+  margin-bottom: 23px;
+
   @media (--screen-tablet) {
     display: flex;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &--vertical-reverse {
@@ -11,8 +18,14 @@
   }
 
   &--contacts {
+    @media (--screen-tablet) {
+      margin: 0 auto;
+      width: 100%;
+    }
+
     @media (--screen-desktop) {
-      width: 100px;
+      width: 43%;
+      margin: 0;
     }
   }
 
@@ -21,22 +34,114 @@
     display: block;
   }
 
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding-left: 20px;
+  }
+
   &__label {
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
     @media (--screen-tablet){
+      margin-left: 0;
+      margin-right: 10px;
       flex-shrink: 0;
 
       &--vertical-reverse {
         order: 2;
       }
     }
+
+    &--email,
+    &--tel {
+      margin-left: 20px;
+
+      @media (--screen-tablet) {
+        margin-top: 15px;
+      }
+
+      @media (--screen-desktop) {
+        margin-top: 15px;
+      }
+    }
   }
 
   &__field {
     width: 100%;
+    padding-right: 70px;
+    box-sizing: border-box;
+
     @media (--screen-tablet){
+      position: relative;
       flex-grow: 1;
       min-width: 100px;
-      /*where is border?*/
+    }
+
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"] {
+      height: 64px;
+
+      border: 2px solid $light-gray;
+    }
+  }
+
+  &--tel {
+    @media(--screen-tablet){
+      position: relative;
+
+      margin-left: 0;
+      margin-bottom: 25px;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: block;
+        width: 64px;
+        height: 64px;
+
+        content: "";
+        background-color: $light-gray;
+        background-image: url("../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      @media (--screen-desktop) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &--email {
+    @media(--screen-tablet){
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: block;
+        width: 64px;
+        height: 64px;
+
+        content: "";
+        background-color: $light-gray;
+        background-image: url("../img/icon-email.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    @media (--screen-desktop) {
+      margin-right: 52px;
     }
   }
 }

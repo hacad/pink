@@ -1,9 +1,45 @@
 .map {
   position: relative;
 
+  height: 200px;
+
   text-align: center;
 
-  outline: 1px solid red;
+  background: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /*outline: 1px solid red;*/
+  @media (--screen-mobile) and (min-resolution: 144dpi), (--screen-mobile) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (--screen-tablet) {
+    height: 368px;
+
+    background: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  @media (--screen-tablet) and (min-resolution: 144dpi), (--screen-tablet) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+  }
+
+  @media (--screen-desktop) {
+    height: 504px;
+
+    background: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 47.5% 0;
+    background-size: cover;
+  }
+
+  @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
 
   &__triangle {
     position: absolute;

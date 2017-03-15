@@ -1,0 +1,87 @@
+.menu__input {
+  display: none;
+}
+
+.menu__label {
+  position: relative;
+
+  @media (--screen-desktop) {
+    display: none;
+  }
+}
+
+.menu__input:not(:checked) + .main-header .menu__label::before {
+  content: "";
+  left: -50px;
+
+  display: inline-block;
+  vertical-align: bottom;
+  width: 50px;
+  border-bottom: 3px solid $white;
+  box-shadow: 0 -10px 0 0 $white,
+              0 -20px 0 0 $white;
+
+  @media (--screen-tablet) {
+    box-shadow: 0 10px 0 0 $white,
+                0 -10px 0 0 $white;
+
+  }
+}
+
+.menu__input:checked + .main-header .menu__label::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -27px;
+
+  display: block;
+  height: 40px;
+  transform: rotate(45deg);
+
+  border-right: 5px solid $white;
+}
+
+
+.menu__input:checked + .main-header .menu__label::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -27px;
+
+  display: block;
+  height: 40px;
+  transform: rotate(-45deg);
+
+  border-left: 5px solid $white;
+}
+
+/*toggle logic*/
+.menu__input:checked + .main-header {
+  background-color: $gray-dark;
+}
+
+.menu__input:not(:checked) + .main-header .navigation {
+  display: none;
+}
+
+.menu__input:checked + .main-header .navigation {
+  display: block;
+  background-color: $gray-dark;
+}
+
+/*show in desktop mode anyway*/
+@media (--screen-desktop) {
+  .menu__input:checked + .main-header {
+    background: none;
+  }
+
+  .menu__input:not(:checked) + .main-header .navigation {
+    display: block;
+    background: none;
+  }
+
+  .menu__input:checked + .main-header .navigation {
+    display: block;
+    background: none;
+  }
+}

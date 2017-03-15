@@ -1,7 +1,22 @@
 .reviews {
-  padding-top: 28px;
+  position: relative;
+
+  margin-top: -45px;
+  padding: 49px 0 47px 0;
 
   background-color: $white;
 
-  outline: 1px solid red;
+  @media (--screen-tablet) {
+    padding-top: 61px;
+    padding-bottom: 11px;
+  }
+
+  @media (--screen-desktop) {
+    padding-top: 172px;
+
+    background-image: url(../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 21%;
+  }
+  /*outline: 1px solid red;*/
 }

@@ -1,13 +1,54 @@
 .main-footer {
   background-color: $white;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
+
+  &--index {
+    display:none;
+
+    @media (--screen-tablet) {
+      display: block;
+      padding: 27px 0 42px 0;
+    }
+
+    @media (--screen-desktop) {
+      padding: 40px 0 74px 0;
+    }
+  }
+
+  /*
+    is it right to make it as block of photo page i.e. photo__main-footer
+    and stylize it for photo page
+  */
+  &--photo {
+    padding-top: 35px;
+
+    @media (--screen-tablet) {
+      padding-top: 0;
+    }
+
+    @media (--screen-desktop) {
+      padding-top: 55px;
+    }
+  }
+
+  &--form {
+    padding-top: 30px;
+
+    @media (--screen-desktop) {
+      padding-top: 10px;
+    }
+  }
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     @media (--screen-tablet) {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      flex-direction: row;
+      align-items: center;
     }
   }
 }

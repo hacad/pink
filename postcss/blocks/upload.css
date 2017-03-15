@@ -3,20 +3,318 @@
 
   background-color: $light-gray;
 
-  outline: 1px solid red;
+  @media (--screen-desktop) {
+    padding-top: 0px;
+
+    background-color: $white;
+  }
+
+  /*outline: 1px solid red;*/
 
   &__container {
     @media (--screen-tablet) {
       display: flex;
       justify-content: space-between;
+
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+
+    @media (--screen-desktop) {
+      justify-content: space-around;
+      width: 98%;
+      padding-bottom: 54px;
+
+      background-color: $light-gray;
     }
   }
 
-  &__title {
-    margin: 0;
+  &__photo-wrapper {
+    margin-bottom: 40px;
 
-    text-align: center;
+    @media (--screen-tablet) {
+      width: 48%;
+      margin-bottom: 3px;
+      padding-top: 10px;
+    }
 
-    background-color: $white;
+    @media (--screen-desktop) {
+      width: 40%;
+      padding-top: 27px;
+    }
+  }
+
+  &__photo {
+    display: block;
+    margin: 0 auto;
+
+    @media (--screen-desktop) {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
+  &__photo-tools {
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 120px;
+    padding-bottom: 50px;
+
+    @media (--screen-tablet) {
+      flex-direction: column;
+      width: 50%;
+      padding-bottom: 0px;
+    }
+
+    @media (--screen-desktop) {
+      display: block;
+      width: 48%;
+    }
+  }
+
+  &__upload-field {
+    margin-bottom: 80px;
+
+    @media (--screen-tablet) {
+      position: relative;
+
+      width: 88%;
+      margin-left: 11%;
+      margin-bottom: 6px;
+      padding-bottom: 6px;
+
+      border-bottom: 1px solid $gray;
+    }
+
+    @media (--screen-desktop) {
+      width: 92%;
+      margin: 0;
+
+      padding-bottom: 9px;
+      padding-top: 25px;
+
+      &:nth-child(3) {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  &__upload-field-input {
+    display: none;
+  }
+
+  &__upload-field-label {
+    font-size: 0;
+
+    cursor: pointer;
+
+    @media (--screen-tablet) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__upload-svg-wrap {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+
+    @media (--screen-tablet) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__upload-svg {
+    position: absolute;
+    /*how do they work together?*/
+    top: 50%;
+    transform: translateY(-50%);
+
+    fill: $gray;
+
+    transition:  fill 0.2s;
+
+    /*How to fill the last icon?*/
+    #Layer_3& path {
+      fill: $gray;
+      transition:  fill 0.2s;
+    }
+
+    &:hover,
+    #Layer_3&:hover * {
+      fill: $pink;
+    }
+
+    @media (--screen-tablet) {
+      width: 24px;
+      height: 24px;
+
+      &, #Layer_3& path {
+        fill: $pink;
+      }
+    }
+
+    @media (--screen-desktop) {
+      width: 31px;
+      height: 31px;
+    }
+
+    &--fill,
+    &--crop {
+      @media (--screen-desktop) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &--contrast {
+      @media (--screen-desktop) {
+        width: 63px;
+      }
+    }
+  }
+
+  &__upload-field-input:checked + &__upload-field-label &__upload-svg,
+  &__upload-field-input:checked + &__upload-field-label #Layer_3&__upload-svg path {
+    fill: $pink;
+  }
+
+  &__upload-scale {
+    display: none;
+    position: absolute;
+    top: 86px;
+    left: 0;
+
+    height: 2px;
+    width: 85%;
+
+    background-color: $gray-dark;
+    cursor: default;
+
+    transform: translateX(7.5%);
+
+    @media (--screen-tablet) {
+      position: relative;
+      top: 0;
+
+      width: 71%;
+      display: inline-block;
+      vertical-align: middle;
+      left: 2px;
+    }
+
+    @media (--screen-desktop) {
+      width: 70%;
+      margin-left: 6%;
+    }
+  }
+
+  &__upload-toggle {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50px;
+    border: 2px solid $pink;
+    background-color: #fff;
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    @media (--screen-tablet) {
+      left: 70%;
+    }
+  }
+
+  &__upload-field-input--contrast + &__upload-field-label &__upload-toggle {
+    left: 50%;
+
+    @media (--screen-tablet) {
+      left: 45%;
+    }
+  }
+
+  &__upload-field-input--fill + &__upload-field-label &__upload-toggle {
+    left: 20%;
+
+    @media (--screen-tablet) {
+      left: 8%;
+    }
+  }
+
+  &__upload-field-input:checked + &__upload-field-label &__upload-scale {
+    display: block;
+
+    @media (--screen-tablet) {
+      display: inline-block;
+    }
+  }
+
+  &__buttons-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -43px;
+      left: -40px;
+
+      display: block;
+      width: 122%;
+      height: 2px;
+      background-color: $lightest-gray;
+
+      @media (--screen-tablet) {
+        display: none;
+      }
+    }
+
+    @media (--screen-tablet) {
+      width: 83%;
+      margin-top: 17%;
+      margin-left: 9%;
+      margin-right: 2%;
+    }
+
+    @media (--screen-desktop) {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin-top: 33%;
+      margin-left: 2%;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @media (--screen-desktop) {
+      width: 45%;
+    }
+
+    &:first-child {
+      margin-bottom: 10px;
+
+      @media (--screen-tablet) {
+        margin-bottom: 24px;
+      }
+
+      @media (--screen-desktop) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
