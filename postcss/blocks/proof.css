@@ -22,10 +22,6 @@
     @media(--screen-tablet){
       padding-top: 45px;
       padding-bottom: 50px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
     }
 
     @media (--screen-desktop) {
@@ -38,12 +34,13 @@
     margin-left: 75px;
 
     @media (--screen-tablet) {
-      /*padding-top: 50px;*/
       padding-top: 9%;
+      margin-left: 300px;
     }
 
     @media (--screen-desktop) {
       padding-top: 9.5%;
+      margin-left: 366px;
     }
   }
 

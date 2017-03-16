@@ -119,18 +119,7 @@
       }
 
       @media (--screen-desktop){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        padding: 37px 27px 9px 60px;
-      }
-    }
-
-    &--achievements {
-      @media (--screen-desktop) {
-        display: flex;
-        flex-wrap: wrap;
+         padding: 37px 27px 9px 60px;
       }
     }
   }
@@ -138,7 +127,7 @@
   &__title {
     color: $pink;
     text-transform: uppercase;
-    text-align: center;
+    margin: 0 auto;
 
     &--contacts {
       display: none;
