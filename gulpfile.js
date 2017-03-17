@@ -44,7 +44,9 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("postcss/**/*.css", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html").on("change", function() {
+    run("copy", server.reload);
+  });
 });
 
 gulp.task("images", function() {
@@ -75,7 +77,7 @@ gulp.task("copy", function() {
       "fonts/**/*.{woff,woff2}",
       "img/**",
       "js/**",
-      "*.html", "css/normalize.css"], {
+      "*.html"], {
         base: "."
       })
       .pipe(gulp.dest("build"));
