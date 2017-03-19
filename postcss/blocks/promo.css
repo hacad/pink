@@ -5,7 +5,7 @@
 
   background-image: url("../img/iphone-hand-mobile@1x.png"),
                     url("../img/bg-back-mobile@1x.jpg");
-  background-position: left 39%, center center;
+  background-position: left 40%, center center;
   background-size: auto, cover;
   background-repeat: no-repeat;
 
@@ -34,7 +34,7 @@
 
     background-image: url("../img/iphone-hand-desktop@1x.png"),
                       url("../img/bg-back-desktop@1x.jpg");
-    background-position: 60% 100%, center center;
+    background-position: 62% 101%, center center;
   }
 
   @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
@@ -43,11 +43,12 @@
 
   &--index {
     @media (--screen-tablet) {
-      padding-bottom: 15%;
+      padding-bottom: 14.9%;
     }
 
     @media (--screen-desktop) {
-      padding-bottom: 7%;
+      padding-top: 13.8%;
+      padding-bottom: 8.03%;
     }
   }
 
@@ -85,27 +86,35 @@
     }
   }
 
+  &--form {
+    min-height: 142px;
+  }
+
   &--photo {
-    padding-top: 102px;
+    padding-top: 97px;
 
     @media (--screen-tablet) {
       padding-top: 181px;
+      padding-bottom: 119px;
     }
 
     @media (--screen-desktop) {
-      padding-top: 180px;
-      padding-bottom: 88px;
+      padding-top: 173px;
+      padding-bottom: 81px;
     }
   }
 
   &--form {
+    padding-top: 95px;
+
     @media (--screen-tablet) {
+      padding-top: 180px;
       padding-bottom: 80px;
     }
 
     @media (--screen-desktop) {
-      padding-top: 188px;
-      padding-bottom: 81px;
+      padding-top: 173px;
+      padding-bottom: 79px;
     }
   }
 
@@ -146,8 +155,15 @@
 
       text-align: center;
 
+      @media (--screen-tablet) {
+        margin-left: 10px;
+      }
+
       @media (--screen-desktop) {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
+
+        font-size: $font-size-h1--desktop;
+        line-height: $line-height-h1;
       }
     }
 
@@ -165,11 +181,23 @@
       }
     }
 
+    &--photo {
+      padding-right: 0px;
+
+      @media (--screen-desktop) {
+        padding-right: 19px;
+      }
+    }
+
     &--form {
       width: 72%;
 
       @media (--screen-tablet) {
         width: 81%;
+      }
+
+      @media (--screen-desktop) {
+        padding-right: 19px;
       }
     }
   }

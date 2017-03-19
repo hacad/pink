@@ -50,6 +50,8 @@
   }
 
   &__contact {
+    position: relative;
+
     margin-top: 0;
 
     display: block;
@@ -59,5 +61,33 @@
     text-align: center;
     text-decoration: none;
     color: $pink;
+
+    &:hover {
+      color: $gray-dark;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: $gray-dark;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 }

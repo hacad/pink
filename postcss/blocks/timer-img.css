@@ -1,6 +1,6 @@
 .timer-img {
   position: relative;
-  
+
   float: left;
   width: 235px;
   height: 300px;
@@ -31,9 +31,15 @@
     border-radius: 50%;
     background-color: $white;
 
-    @media (--screen-desktop) {
+    @media (--screen-tablet) {
       top: 66px;
-      left: 30px;
+      width: 176px;
+      height: 178px;
+    }
+
+    @media (--screen-desktop) {
+      top: 72px;
+      left: 22px;
 
       width: 219px;
       height: 219px;
@@ -56,8 +62,8 @@
     }
 
     @media (--screen-desktop) {
-      top: -6px;
-      left: -6px;
+      top: 4px;
+      left: -15px;
 
       width: 330px;
       height: 348px;

@@ -24,7 +24,7 @@
     }
 
     @media (--screen-desktop) {
-      width: 43%;
+      width: 44%;
       margin: 0;
     }
   }
@@ -38,6 +38,24 @@
   input[type="email"],
   input[type="tel"] {
     padding-left: 20px;
+    transition: box-shadow .2s;
+  }
+
+  input[type="text"]:hover,
+  input[type="email"]:hover,
+  input[type="tel"]:hover,
+  textarea:hover {
+    box-shadow: 0 0 0 2px $gray-dark;
+    transition: box-shadow .2s;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    box-shadow: 0 0 0 2px $pink;
+    transition: box-shadow .2s;
+    outline: none;
   }
 
   &__label {
@@ -66,6 +84,12 @@
 
       @media (--screen-desktop) {
         margin-top: 15px;
+      }
+    }
+
+    &--name {
+      @media(--screen-desktop) {
+        margin-bottom: 0;
       }
     }
   }
@@ -141,7 +165,7 @@
     }
 
     @media (--screen-desktop) {
-      margin-right: 52px;
+      margin-right: 31px;
     }
   }
 }

@@ -5,14 +5,14 @@
   /*outline: 1px solid red;*/
 
   &__container {
-    padding: 63px 0 45px 0;
+    padding: 60px 0 45px 0;
 
     @media (--screen-tablet) {
-      padding-top: 43px;
+      padding-top: 33px;
     }
 
     @media (--screen-desktop) {
-      padding: 23px 0 66px 0;
+      padding: 47px 0 66px 0;
     }
   }
 }

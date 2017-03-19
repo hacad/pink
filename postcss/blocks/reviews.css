@@ -1,22 +1,30 @@
 .reviews {
   position: relative;
 
-  margin-top: -45px;
-  padding: 49px 0 47px 0;
+  margin-top: -41px;
+  padding: 48px 0 41px 0;
 
   background-color: $white;
 
   @media (--screen-tablet) {
-    padding-top: 61px;
-    padding-bottom: 11px;
+    /*margin-top: -45px;*/
+    margin-top: 0;
+    padding-top: 9px;
+    padding-bottom: 17px;
   }
 
   @media (--screen-desktop) {
-    padding-top: 172px;
+    margin-top: 0;
+    padding-top: 72px;
+    padding-bottom: 22px;
 
-    background-image: url(../img/icon-quotes.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 21%;
+    &__container::before {
+      display: block;
+      content: url('../img/icon-quotes.svg');
+
+      margin: 0 auto;
+      width: 93px;
+    }
   }
   /*outline: 1px solid red;*/
 }

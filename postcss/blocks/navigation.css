@@ -19,14 +19,12 @@
       flex-wrap: wrap;
       justify-content: flex-end;
       align-items: center;
-      margin-right: calc($screen-desktop-padding + 0)px;;
+      margin-right: calc($screen-desktop-padding * 2)px;
     }
   }
 
   &__link {
     position: relative;
-
-    margin: 0 auto;
     padding: 24px 0;
 
     display: block;
@@ -40,6 +38,30 @@
       padding: 30px 0 20px 0;
 
       text-transform: none;
+      font-weight: $font-weight;
+      font-size: $font-size-big;
+
+      &--active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+      }
+
+      &:hover {
+        color: $pink;
+      }
+
+      &--active:hover::after {
+        background-color: $pink;
+      }
+
+      &:active {
+        opacity: 0.4;
+      }
     }
 
     &::before {
@@ -65,11 +87,7 @@
 
   &__item {
     @media (--screen-desktop) {
-      margin-left: 95px;
-
-      &:last-child {
-        margin-right: 10px;
-      }
+      margin-left: 80px;
     }
   }
 }

@@ -21,6 +21,10 @@
     @media (--screen-tablet) {
       padding-left: 60px;
     }
+
+    @media(--screen-desktop) {
+      padding-top: 6px;
+    }
   }
 
   &__label::before {

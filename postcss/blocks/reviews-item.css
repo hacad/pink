@@ -1,5 +1,5 @@
 .reviews-item {
-  margin-bottom: 71px;
+  margin-bottom: 26px;
 
   display: none;
 
@@ -13,7 +13,7 @@
   }
 
   @media (--screen-desktop) {
-    padding: 0 130px;
+    padding: 22px 130px 0 130px;
   }
 
   &__title {
@@ -47,16 +47,23 @@
   }
 
   &__text {
+    margin-top: 19px;
     margin-bottom: 0;
 
     font-size: $font-size;
-    line-height: $line-height;
+    line-height: $line-height-big;
 
     @media (--screen-tablet) {
       order: 1;
-      padding-bottom: 45px;
+      margin-top: 26px;
+      padding-bottom: 42px;
 
       font-size: $font-size-big;
+      line-height: 1.7;
+    }
+
+    @media (--screen-desktop) {
+      padding-bottom: 36px;
     }
   }
 }

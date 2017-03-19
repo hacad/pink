@@ -2,7 +2,7 @@
   background-color: $white;
 
   @media (--screen-tablet) {
-    padding-top: 14px;
+    padding-top: 30px;
   }
 
   /*outline: 1px solid red;*/

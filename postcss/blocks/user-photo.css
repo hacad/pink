@@ -8,7 +8,7 @@
   }
 
   @media (--screen-tablet) {
-    width: 48%;
+    width: 48.4%;
 
     &:nth-last-child(2) {
       margin-bottom: 0;
@@ -17,7 +17,9 @@
 
   @media(--screen-desktop) {
     width: 31.25%;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
+
+    margin-right: 20px;
 
     &:last-child,
     &:nth-last-child(2),
@@ -36,67 +38,6 @@
       width: 300px;
       height: 400px;
     }
-
-    &--panorama {
-      position: relative;
-
-      min-height: 137px;
-      width: 100%;
-      margin: 0 auto;
-
-      background-image: url("../img/panorama-mobile@1x.jpg");
-      background-position: center center;
-      background-size: cover;
-      outline: 1px solid lightblue;
-
-      @media(--screen-tablet) {
-        min-height: 510px;
-
-        background-image: url("../img/panorama-tablet@1x.jpg");
-      }
-
-      @media (--screen-mobile) and (min-resolution: 144dpi), (--screen-mobile) and (min-resolution: 1.5dppx) {
-        background-image: url("../img/panorama-mobile@2x.jpg"), url("../img/panorama-mobile@2x.jpg");
-      } 
-
-      @media (--screen-tablet) and (min-resolution: 144dpi), (--screen-tablet) and (min-resolution: 1.5dppx) {
-        background-image: url("../img/panorama-tablet@2x.jpg"), url("../img/panorama-tablet@2x.jpg");
-      } 
-
-      @media (--screen-desktop) {
-        background-image: url("../img/panorama-desktop@1x.jpg");
-      }
-
-      @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
-        background-image: url("../img/panorama-desktop@2x.jpg"), url("../img/panorama-desktop@2x.jpg");
-      } 
-    }
-  }
-
-  &__sticker {
-    position: absolute;
-    top: 0;
-    right: 20px;
-
-    display: inline-block;
-    padding: 11px 20px;
-
-    color: $white;
-    text-transform: uppercase;
-    font-size: $font-size-small;
-    font-weight: calc($font-weight + 300);
-
-    background-color: $pink;
-
-    @media (--screen-tablet) {
-      top: 57px;
-      right: 40px;
-    }
-
-    @media (--screen-desktop) {
-      top: 53px;
-      right: 362px;
-    }
   }
 
   &__container {
@@ -109,7 +50,7 @@
     }
 
     @media (--screen-desktop) {
-      width: 98%;
+      justify-content: flex-start;
     }
   }
 
@@ -134,14 +75,18 @@
   }
 
   &__photo-description {
-    padding: 20px 0 23px 17px;
+    padding: 20px 0 22px 17px;
 
     color: $gray-dark;
 
     background-color: $light-gray;
 
     @media (--screen-tablet) {
-      padding: 25px 30px 23px 25px;
+      padding: 27px 30px 23px 27px;
+    }
+
+    @media (--screen-desktop) {
+      padding: 27px 32px 23px 28px;
     }
 
     &--panorama {
@@ -163,8 +108,13 @@
       flex-direction: column;
 
       @media (--screen-tablet) {
-        min-height: 100px;
-        padding-bottom: 32px;
+        min-height: 98px;
+        padding-bottom: 30px;
+      }
+
+      @media (--screen-desktop) {
+        min-height: 98px;
+        padding-bottom: 28px;
       }
     }
   }
@@ -185,11 +135,8 @@
     font-size: $font-size;
     line-height: $line-height;
 
-    &--panorama {
-      @media (--screen-tablet) {
-        order: 3;
-        width: 100%;
-      }
+    @media (--screen-desktop) {
+      margin-bottom: 22px;
     }
   }
 
@@ -229,6 +176,9 @@
   }
 
   &__heart {
+    width: 12px;
+    height: 12px;
+
     fill: $pink;
   }
 }
