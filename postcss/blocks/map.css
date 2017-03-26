@@ -52,6 +52,30 @@
     width: 100%;
   }
 
+  &::before {
+    position: absolute;
+    top: 0;
+
+    content: '';
+
+    display: block;
+    width: 100%;
+
+    background-image: url('../img/bg-triangle-white-footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 36px;
+
+    @media (--screen-tablet) {
+      height: 73px;
+    }
+
+    @media (--screen-desktop) {
+      height: 165px;
+    }
+  }
+
   &__iframe {
     border: none;
     width: 100%;
