@@ -18,16 +18,29 @@
     border-radius: 50%;
     cursor: pointer;
 
+    &:hover {
+      background-color: #7e868f;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (--screen-desktop) {
       display: none;
     }
   }
 
   &__controls {
+    padding-left: 8px;
     text-align: center;
 
     @media (--screen-tablet) {
       margin-top: 35px;
+    }
+
+    @media (--screen-desktop) {
+      margin-top: 0;
     }
   }
 
@@ -58,7 +71,7 @@
     &__controls > label[for="btn-review-2"]::after,
     &__controls > label[for="btn-review-3"]::after {
       position: absolute;
-      top: 29%;
+      top: 39%;
       right: 10px;
 
       width: 30px;
@@ -74,6 +87,19 @@
       cursor: pointer;
     }
 
+    &__controls:hover > label[for="btn-review-1"]::after,
+    &__controls:hover > label[for="btn-review-2"]::after,
+    &__controls:hover > label[for="btn-review-3"]::after {
+      border-bottom: 2px solid ced1d5;
+      border-right: 2px solid ced1d5;
+    }
+
+    &__controls:active > label[for="btn-review-1"]::after,
+    &__controls:active > label[for="btn-review-2"]::after,
+    &__controls:active > label[for="btn-review-3"]::after {
+      opacity: 0.3;
+    }
+
     & #btn-review-1:checked ~ &__controls > label[for="btn-review-2"]::after,
     & #btn-review-2:checked ~ &__controls > label[for="btn-review-3"]::after,
     & #btn-review-3:checked ~ &__controls > label[for="btn-review-1"]::after {
@@ -84,7 +110,8 @@
     &__controls > label[for="btn-review-2"]::before,
     &__controls > label[for="btn-review-3"]::before {
       position: absolute;
-      top: 29%;
+      left: 0;
+      top: 39%;
 
       width: 30px;
       height: 30px;
@@ -97,6 +124,19 @@
       background-color: transparent;
       transform: rotate(45deg) translateY(-50%);
       cursor: pointer;
+    }
+
+    &__controls:hover > label[for="btn-review-1"]::before,
+    &__controls:hover > label[for="btn-review-2"]::before,
+    &__controls:hover > label[for="btn-review-3"]::before {
+      border-bottom: 2px solid ced1d5;
+      border-left: 2px solid ced1d5;
+    }
+
+    &__controls:active > label[for="btn-review-1"]::before,
+    &__controls:active > label[for="btn-review-2"]::before,
+    &__controls:active > label[for="btn-review-3"]::before {
+      opacity: 0.3;
     }
 
     & #btn-review-1:checked ~ &__controls > label[for="btn-review-3"]::before,

@@ -1,26 +1,55 @@
 .social {
   margin-bottom: 12px;
 
-  /**/
+  @media (--screen-desktop) {
+    padding-top: 5px;
+    padding-left: 8px;
+  }
+
+  &--index {
+    @media (--screen-tablet) {
+      width: 191px;
+      margin-left: -6px;
+      padding-top: 13px;
+    }
+
+    @media (--screen-desktop) {
+      margin-left: 9px;
+      padding-top: 10px;
+    }
+  }
+
   &--main-footer-photo,
   &--main-footer-form {
     margin-top: 31px;
     margin-bottom: 35px;
   }
-  /**/
 
-  @media (--screen-tablet) {
-    width: 191px;
-    margin-bottom: 0;
+  &--main-footer-photo {
+    margin-bottom: 28px;
 
-    &--main-footer-form {
-      margin-top: 20px;
+    @media (--screen-tablet) {
+      margin: 7px 0 2px -21px;
+      padding-top: 18px;
+    }
+
+    @media (--screen-desktop) {
+      padding-top: 20px;
+      padding-left: 37px;
     }
   }
 
-  @media (--screen-desktop) {
-    padding-top: 5px;
-    padding-left: 8px;
+  &--main-footer-form{
+    margin: 29px 0;
+
+    @media (--screen-tablet) {
+      margin-top: 33px;
+      padding-top: 12px;
+    }
+
+    @media (--screen-desktop) {
+      margin-left: 30px;
+    }
   }
 
   &__link {

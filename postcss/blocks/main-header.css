@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 20;
 
-  padding: 22px 0;
+  padding: 8px 0;
   width: 100%;
 
   background-color: rgba(0, 0, 0, 0.3);
@@ -16,7 +16,8 @@
   @media (--screen-desktop) {
     position: absolute;
 
-    padding-top: 27px;
+    padding-top: 12px;
+    padding-bottom: 28px;
   }
 
   &__container {

@@ -5,7 +5,169 @@
 
   /*outline: 1px solid red;*/
 
-  @media (--screen-desktop) {
-    padding-bottom: 37px;
+  &__container {
+    @media (--screen-tablet) {
+      padding-top: 56px;
+    }
+  }
+
+  &__photo-wrapper {
+    &--panorama {
+      position: relative;
+
+      min-height: 137px;
+      width: 100%;
+      margin: 0 auto;
+
+      background-image: url("../img/panorama-mobile@1x.jpg");
+      background-position: center center;
+      background-size: cover;
+      outline: 1px solid lightblue;
+
+      @media(--screen-tablet) {
+        min-height: 508px;
+
+        background-image: url("../img/panorama-tablet@1x.jpg");
+      }
+
+      @media (--screen-mobile) and (min-resolution: 144dpi), (--screen-mobile) and (min-resolution: 1.5dppx) {
+        background-image: url("../img/panorama-mobile@2x.jpg"), url("../img/panorama-mobile@2x.jpg");
+      }
+
+      @media (--screen-tablet) and (min-resolution: 144dpi), (--screen-tablet) and (min-resolution: 1.5dppx) {
+        background-image: url("../img/panorama-tablet@2x.jpg"), url("../img/panorama-tablet@2x.jpg");
+      }
+
+      @media (--screen-desktop) {
+        min-height: 506px;
+        background-image: url("../img/panorama-desktop@1x.jpg");
+      }
+
+      @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
+        background-image: url("../img/panorama-desktop@2x.jpg"), url("../img/panorama-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &__sticker {
+    float: right;
+    display: block;
+    padding: 11px 20px;
+
+    color: $white;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    font-weight: calc($font-weight + 300);
+
+    background-color: $pink;
+
+    @media (--screen-desktop) {
+      margin-right: 20px;
+    }
+
+    @media (--screen-desktop) {
+      top: 53px;
+      right: 362px;
+    }
+  }
+
+  &__photo-description {
+    padding: 20px 0 23px 17px;
+
+    color: $gray-dark;
+
+    background-color: $light-gray;
+
+    @media (--screen-tablet) {
+      padding: 26px 30px 8px 27px;
+    }
+
+    @media (--screen-desktop) {
+      padding: 26px 30px 23px 28px;
+    }
+
+    &--panorama {
+      @media (--screen-tablet) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      @media (--screen-desktop) {
+        width: 92%;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  &__author {
+    font-size: $font-size;
+    font-weight: calc($font-weight + 300);
+  }
+
+  &__time {
+    font-size: $font-size-small;
+    color: $gray;
+  }
+
+  &__text {
+    margin: 5px 0 20px 0;
+
+    font-size: $font-size;
+    line-height: $line-height;
+
+    &--panorama {
+      @media (--screen-tablet) {
+        order: 3;
+        width: 100%;
+      }
+    }
+  }
+
+  &__footer {
+    color: $pink;
+
+    @media (--screen-tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--panorama {
+      @media (--screen-tablet){
+        order: 2;
+      }
+    }
+  }
+
+  &__like-text {
+    display: inline-block;
+    margin-left: 16px;
+
+    font-size: $font-size-small;
+    text-transform: uppercase;
+
+    @media (--screen-tablet) {
+      order: -1;
+
+      margin-left: 0;
+      margin-right: 18px;
+    }
+
+    @media (--screen-desktop) {
+      margin-right: 14px;
+    }
+  }
+
+  &__heart {
+    width: 12px;
+    height: 12px;
+
+    fill: $pink;
+
+    @media(--screen-desktop) {
+      width: 18px;
+      height: 13px;
+    }
   }
 }

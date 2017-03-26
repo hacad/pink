@@ -1,5 +1,5 @@
 .form-section {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 19px;
 
   background-color: $white;
@@ -50,7 +50,7 @@
 
     &--name,
     &--app {
-      width: 45%
+      width: 46.5%
     }
 
     &--name {
@@ -89,10 +89,19 @@
     @media (--screen-tablet) {
       padding-bottom: 43px;
     }
+
+    @media (--screen-desktop) {
+      padding-top: 33px;
+    }
   }
 
   &--footer {
     padding-bottom: 30px;
+
+    @media (--screen-desktop) {
+      padding-top: 27px;
+      padding-bottom: 5px;
+    }
   }
 
   &__item {
@@ -119,7 +128,7 @@
       }
 
       @media (--screen-desktop){
-         padding: 37px 27px 9px 60px;
+         padding: 33px 27px 9px 60px;
       }
     }
   }
@@ -128,6 +137,7 @@
     color: $pink;
     text-transform: uppercase;
     margin: 0 auto;
+    text-align: center;
 
     &--contacts {
       display: none;
@@ -148,7 +158,7 @@
 
     &--achievements {
       @media (--screen-desktop) {
-        width: 93%;
+        width: 95%;
       }
     }
   }
@@ -161,7 +171,7 @@
     margin-top: 36px;
 
     @media (--screen-tablet) {
-      margin-top: 38px;
+      margin-top: 40px;
       margin-left: 60px;
 
       &:last-child {
@@ -170,7 +180,7 @@
     }
 
     @media (--screen-desktop) {
-      margin-left: 51px;
+      margin-left: 75px;
     }
   }
 
@@ -192,6 +202,8 @@
     }
 
     @media (--screen-desktop) {
+      padding-top: 12px;
+      padding-left: 26px;
       width: 86%;
       min-height: 105px;
     }
@@ -207,10 +219,6 @@
     @media (--screen-tablet) {
       margin-top: 25px;
       float: right;
-    }
-
-    @media (--screen-desktop) {
-      margin-right: 21px;
     }
   }
 
@@ -240,7 +248,7 @@
     }
 
     @media (--screen-desktop) {
-      width: 31%;
+      width: 32%;
     }
   }
 }

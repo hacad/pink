@@ -1,7 +1,7 @@
 .form-contest {
   background-color: $white;
 
-  & .container {
+  & &__container {
     @media(--screen-tablet){
       display: flex;
       flex-direction: column;
@@ -11,6 +11,8 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      padding-right: 19px;
     }
   }
 

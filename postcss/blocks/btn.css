@@ -27,8 +27,26 @@
     border-radius: 27px;
   }
 
+  &--download:hover {
+    background-color: $white;
+
+    color: $pink;
+  }
+
+  &--download:active {
+    color: rgba(210,40,86,.3);
+  }
+
   &--green {
     background-color: $green;
+  }
+
+  &--green:hover {
+    background-color: $green-dark;
+  }
+
+  &--green:active {
+    color: hsla(0,0%,100%,.3);
   }
 
   &--pink {
@@ -37,9 +55,28 @@
     color: $pink;
   }
 
+  &--pink:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &--pink:active {
+    color: hsla(0,0%,100%,.3);
+  }
+
   &--gray {
     background-color: transparent;
     border-color: $lightest-gray;
+    color: $lightest-gray;
+  }
+
+  &--gray:hover {
+    color: $gray;
+    border-color: $gray;
+  }
+
+  &--gray:active {
+    background-color: $gray;
     color: $lightest-gray;
   }
 

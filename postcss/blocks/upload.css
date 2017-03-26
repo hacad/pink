@@ -51,6 +51,8 @@
     @media (--screen-desktop) {
       width: 300px;
       height: 400px;
+
+      margin-left: 52px;
     }
   }
 
@@ -58,15 +60,16 @@
     position: relative;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 
     min-height: 120px;
-    padding-bottom: 50px;
+    padding-bottom: 44px;
 
     @media (--screen-tablet) {
       flex-direction: column;
+      justify-content: space-around;
       width: 50%;
       padding-bottom: 0px;
     }
@@ -79,6 +82,8 @@
 
   &__upload-field {
     margin-bottom: 80px;
+
+    margin-left: 36px;
 
     @media (--screen-tablet) {
       position: relative;
@@ -98,8 +103,12 @@
       padding-bottom: 9px;
       padding-top: 25px;
 
+      &:nth-child(2) {
+        padding-top: 18px;
+      }
+
       &:nth-child(3) {
-        padding-top: 10px;
+        padding-top: 15px;
       }
     }
   }
@@ -135,6 +144,10 @@
     position: absolute;
     /*how do they work together?*/
     top: 50%;
+
+    width: 45px;
+    height: 45px;
+
     transform: translateY(-50%);
 
     fill: $gray;
@@ -171,12 +184,26 @@
       @media (--screen-desktop) {
         width: 48px;
         height: 48px;
+
+        padding-left: 10px;
       }
     }
 
     &--contrast {
+      width: 35px;
+      height: 35px;
+
+      @media (--screen-tablet) {
+        width: 15px;
+        height: 15px;
+        padding-left: 5px;
+      }
+
       @media (--screen-desktop) {
+        height: 35px;
         width: 63px;
+
+        padding-left: 0;
       }
     }
   }
@@ -235,13 +262,21 @@
     @media (--screen-tablet) {
       left: 70%;
     }
+
+    @media (--screen-desktop) {
+      left: 27%;
+    }
   }
 
   &__upload-field-input--contrast + &__upload-field-label &__upload-toggle {
-    left: 50%;
+    left: 80%;
 
     @media (--screen-tablet) {
       left: 45%;
+    }
+
+    @media (--screen-desktop) {
+      left: 57%;
     }
   }
 
@@ -250,6 +285,10 @@
 
     @media (--screen-tablet) {
       left: 8%;
+    }
+
+    @media (--screen-desktop) {
+      left: 88%;
     }
   }
 

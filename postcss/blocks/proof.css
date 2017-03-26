@@ -15,7 +15,7 @@
 
   @media (--screen-desktop) {
     background-color: $light-gray;
-    padding-bottom: 37px;
+    padding-bottom: 6px;
   }
 
   &__container {
@@ -26,7 +26,7 @@
 
     @media (--screen-desktop) {
       padding-top: 4px;
-      padding-bottom: 0;
+      padding-bottom: 0px;
     }
   }
 
@@ -34,8 +34,8 @@
     margin-left: 75px;
 
     @media (--screen-tablet) {
-      padding-top: 9%;
-      margin-left: 300px;
+      padding-top: 8%;
+      margin-left: 308px;
     }
 
     @media (--screen-desktop) {
@@ -51,7 +51,7 @@
 
     @media (--screen-tablet) {
       max-width: 200px;
-      margin: 0 0 15px 0;
+      margin: 0;
 
       font-size: $font-size-h2--tablet;
     }
@@ -63,11 +63,16 @@
   }
 
   &__text {
+    @media (--screen-tablet) {
+      margin-top: 12px;
+    }
+
     @media (--screen-desktop) {
       margin-bottom: 38px;
       font-size: $font-size-big;
     }
   }
+
   &__link {
     font-size: $font-size;
     color: $pink;
