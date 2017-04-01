@@ -42,5 +42,6 @@ $screen-desktop: 960px;
 $screen-desktop-padding: 10;
 
 @custom-media --screen-mobile (min-width: 320px);
+@custom-media --screen-mobile-promo (min-width: 321px);
 @custom-media --screen-tablet (min-width: 660px);
 @custom-media --screen-desktop (min-width: 960px);
