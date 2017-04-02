@@ -3,6 +3,16 @@
 
   display: none;
 
+  &.no-js,
+  &--opened {
+    display: block;
+    background-color: $gray-dark;
+
+    @media(--screen-desktop) {
+      background-color: transparent;
+    }
+  }
+
   @media (--screen-desktop) {
     display: block;
     width: 100%;

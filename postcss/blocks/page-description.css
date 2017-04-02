@@ -62,7 +62,7 @@
     }
 
     @media (--screen-desktop) {
-      padding-bottom: 59px;
+      padding-bottom: 74px;
     }
   }
 
@@ -93,7 +93,7 @@
 
       @media (--screen-desktop) {
         box-sizing: border-box;
-        width: 46%;
+        width: 60%;
         margin: 0 auto;
         padding: 20px 30px;
       }

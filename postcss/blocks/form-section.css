@@ -134,10 +134,15 @@
   }
 
   &__title {
+    margin: 0 auto;
+
     color: $pink;
     text-transform: uppercase;
-    margin: 0 auto;
     text-align: center;
+
+    @media (--screen-tablet) {
+      padding: 0 20px;
+    }
 
     &--contacts {
       display: none;
@@ -197,14 +202,14 @@
 
     @media (--screen-tablet) {
       display: block;
-      width: 76%;
+      width: 78%;
       margin: 40px auto;
     }
 
     @media (--screen-desktop) {
       padding-top: 12px;
-      padding-left: 26px;
-      width: 86%;
+      padding-left: 16px;
+      width: 85%;
       min-height: 105px;
     }
   }

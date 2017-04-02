@@ -2,6 +2,7 @@
   padding-top: 460px;
 
   color: $white;
+  background-color: $gray-dark;
 
   background-image: url("../img/iphone-hand-mobile@1x.png"),
                     url("../img/bg-back-mobile@1x.jpg");
@@ -9,9 +10,10 @@
   background-size: auto, cover;
   background-repeat: no-repeat;
 
-  @media (--screen-mobile) and (min-resolution: 144dpi), (--screen-mobile) and (min-resolution: 1.5dppx) {
+  @media (--screen-mobile-promo) and (min-resolution: 144dpi), (--screen-mobile-promo) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
-    background-size: 80%, cover;
+    background-size: auto 285px, cover;
+    background-position: center 175px, center center;
   }
 
   @media (--screen-tablet) {
@@ -34,7 +36,7 @@
 
     background-image: url("../img/iphone-hand-desktop@1x.png"),
                       url("../img/bg-back-desktop@1x.jpg");
-    background-position: 62% 101%, center center;
+    background-position: 94% 101%, center center;
   }
 
   @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
@@ -47,8 +49,8 @@
     }
 
     @media (--screen-desktop) {
-      padding-top: 13.8%;
-      padding-bottom: 8.03%;
+      padding-top: 18.5%;
+      padding-bottom: 10.6%;
     }
   }
 
