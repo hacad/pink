@@ -6,7 +6,7 @@
   }
 
   @media (--screen-tablet) {
-    margin: 0 12px 39px 27px;
+    margin: 0 12px 39px 64px;
   }
 
   @media (--screen-desktop) {

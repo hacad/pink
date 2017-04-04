@@ -10,6 +10,10 @@
     }
   }
 
+  &--index-footer {
+    margin-left: 39px;
+  }
+
   &__svg {
     display: inline-block;
     width: 146.3px;

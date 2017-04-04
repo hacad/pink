@@ -1,7 +1,7 @@
 .contacts-item {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 
-  line-height: $line-height;
+  line-height: 1.5;
 
   &:last-child {
     margin-bottom: 0;

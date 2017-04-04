@@ -28,6 +28,8 @@
   @media (--screen-tablet) and (min-resolution: 144dpi), (--screen-tablet) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
     background-size: 100%, cover;
+    background-size: auto 545px, cover;
+    background-position: bottom 0 right -39px, center center;
   }
 
   @media (--screen-desktop) {
@@ -45,7 +47,8 @@
 
   &--index {
     @media (--screen-tablet) {
-      padding-bottom: 14.9%;
+      padding-top: 31%;
+      padding-bottom: 14.3%;
     }
 
     @media (--screen-desktop) {

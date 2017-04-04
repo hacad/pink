@@ -37,6 +37,7 @@
 
     @media (--screen-tablet) {
       margin-top: 35px;
+      padding-left: 47px;
     }
 
     @media (--screen-desktop) {

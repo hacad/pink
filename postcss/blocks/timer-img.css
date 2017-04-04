@@ -31,9 +31,10 @@
     background-color: $white;
 
     @media (--screen-tablet) {
-      top: 66px;
-      width: 176px;
-      height: 178px;
+      top: 71px;
+      width: 178px;
+      height: 177px;
+      left: 19px;
     }
 
     @media (--screen-desktop) {

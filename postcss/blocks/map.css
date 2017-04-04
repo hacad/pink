@@ -52,6 +52,7 @@
     width: 100%;
   }
 
+  /*make height in %*/
   &::before {
     position: absolute;
     top: -1px;
