@@ -23,7 +23,7 @@
   &--photo {
     @media (--screen-tablet) {
       padding-top: 35px;
-      margin-right: -4px;
+      margin-right: 13px;
     }
 
     @media (--screen-desktop) {

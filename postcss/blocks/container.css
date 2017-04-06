@@ -1,6 +1,6 @@
 .container {
   width: $container-width;
-  max-width: $screen-desktop;
+  max-width: $screen-mobile;
   margin: 0 auto;
   /*padding: 0 6.25%;*/
 
@@ -8,6 +8,7 @@
 
   @media (--screen-tablet) {
     width: $container-width-tablet;
+    max-width: $screen-tablet;
     margin: 0 auto;
     /*padding: 0 5.714285714285714%;*/
     padding: 0;
@@ -16,6 +17,7 @@
 
   @media (--screen-desktop) {
     width: $container-width-desktop;
+    max-width: $screen-desktop;
     margin: 0 auto;
     padding: 0;
 

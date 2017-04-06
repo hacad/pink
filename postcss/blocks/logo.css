@@ -6,6 +6,7 @@
 
   &--footer {
     @media (--screen-tablet) {
+      margin-left: 20px;
       padding-top: 17px;
     }
   }

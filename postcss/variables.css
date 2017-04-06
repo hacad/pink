@@ -33,7 +33,8 @@ $line-height-big: 2.2;
 $container-padding: 20;
 
 $container-width: 87.5%; /*280px/320px*/
-$container-width-tablet: 88.57142857142857%; /*620px/700px*/
+/*$container-width-tablet: 88.57142857142857%;*/ /*620px/700px*/
+$container-width-tablet: 93.93%; /*620px/660px*/
 $container-width-desktop: 97.91666666666667%; /*940px/960px*/
 
 $screen-mobile: 320px;

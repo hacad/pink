@@ -75,7 +75,7 @@
   }
 
   &__photo-description {
-    padding: 20px 0 22px 17px;
+    padding: 22px 0 27px 17px;
 
     color: $gray-dark;
 
@@ -125,15 +125,16 @@
   }
 
   &__time {
+    text-transform: uppercase;
     font-size: $font-size-small;
     color: $gray;
   }
 
   &__text {
-    margin: 5px 0 20px 0;
+    margin: 4px 0 13px 0;
 
     font-size: $font-size;
-    line-height: $line-height;
+    line-height: 1.7;
 
     @media (--screen-desktop) {
       margin-bottom: 22px;

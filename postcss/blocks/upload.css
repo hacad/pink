@@ -309,10 +309,10 @@
       content: "";
       position: absolute;
       top: -43px;
-      left: -40px;
+      left: -7%;
 
       display: block;
-      width: 122%;
+      width: 114%;
       height: 2px;
       background-color: $lightest-gray;
 

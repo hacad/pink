@@ -72,7 +72,7 @@
   }
 
   &__photo-description {
-    padding: 20px 0 23px 17px;
+    padding: 20px 0 25px 17px;
 
     color: $gray-dark;
 
@@ -106,15 +106,16 @@
   }
 
   &__time {
+    text-transform: uppercase;
     font-size: $font-size-small;
     color: $gray;
   }
 
   &__text {
-    margin: 5px 0 20px 0;
+    margin: 5px 0 14px 0;
 
     font-size: $font-size;
-    line-height: $line-height;
+    line-height: 1.7;
 
     &--panorama {
       @media (--screen-tablet) {

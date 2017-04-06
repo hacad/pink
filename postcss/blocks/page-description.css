@@ -15,7 +15,7 @@
   }
 
   &--photo {
-    padding-bottom: 43px;
+    padding-bottom: 49px;
 
     @media (--screen-tablet) {
       padding-bottom: 53px;
@@ -29,7 +29,8 @@
   }
 
   &--photo2 {
-    padding-top: 37px;
+    padding-top: 32px;
+    padding-bottom: 41px;
 
     @media (--screen-tablet) {
       padding-top: 22px;
@@ -84,12 +85,7 @@
     }
 
     &--photo {
-      padding: 7px 0 7px 20px;
-      margin: 0;
-
-      @media (--screen-tablet) {
-        padding-left: 38px;
-      }
+      padding: 8px 0 0 0;
 
       @media (--screen-desktop) {
         box-sizing: border-box;
