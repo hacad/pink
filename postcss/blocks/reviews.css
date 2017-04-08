@@ -15,7 +15,7 @@
   @media (--screen-desktop) {
     margin-top: 0;
     padding-top: 72px;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
 
     &__container::before {
       display: block;

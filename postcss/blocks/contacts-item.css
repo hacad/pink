@@ -1,7 +1,7 @@
 .contacts-item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
-  line-height: 1.5;
+  line-height: 1.4;
 
   &:last-child {
     margin-bottom: 0;
@@ -12,7 +12,7 @@
 
     &:last-child {
       flex-basis: 240px;
-      padding-top: 25px;
+      padding-top: 26px;
 
       @media (--screen-desktop) {
         padding-top: 0;
@@ -44,8 +44,13 @@
     text-align: center;
     color: $gray-dark;
 
+    @media (--screen-tablet) {
+      line-height: 1.4;
+    }
+
     @media (--screen-desktop) {
-      margin-bottom: 17px;
+      margin-bottom: 24px;
+      line-height: $line-height-h1;
     }
   }
 
@@ -62,15 +67,23 @@
     text-decoration: none;
     color: $pink;
 
-    &:hover {
+    @media (--screen-tablet) {
+      line-height: 1.4;
+    }
+
+    @media (--screen-desktop) {
+      line-height: $line-height-h1;
+    }
+
+    &--email:hover {
       color: $gray-dark;
     }
 
-    &:active {
+    &--email:active {
       opacity: 0.3;
     }
 
-    &::after {
+    &--email::after {
       content: "";
       position: absolute;
       left: 0;
@@ -81,12 +94,12 @@
       opacity: 0;
     }
 
-    &:hover::after {
+    &--email:hover::after {
       opacity: 1;
       transition: opacity 0.3s;
     }
 
-    &:active::after {
+    &--email:active::after {
       opacity: 0.3;
     }
   }

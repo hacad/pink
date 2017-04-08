@@ -29,7 +29,7 @@
     background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
     background-size: 100%, cover;
     background-size: auto 545px, cover;
-    background-position: bottom 0 right -39px, center center;
+    background-position: bottom 0 right -20px, center center;
   }
 
   @media (--screen-desktop) {
@@ -38,22 +38,23 @@
 
     background-image: url("../img/iphone-hand-desktop@1x.png"),
                       url("../img/bg-back-desktop@1x.jpg");
-    background-position: 94% 101%, center center;
+    background-position: right -52px bottom 0, center center;
   }
 
   @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 
   &--index {
     @media (--screen-tablet) {
-      padding-top: 31%;
-      padding-bottom: 14.3%;
+      padding-top: 203px;
+      padding-bottom: 95px;
     }
 
     @media (--screen-desktop) {
-      padding-top: 18.5%;
-      padding-bottom: 10.6%;
+      padding-top: 218px;
+      padding-bottom: 122px;
     }
   }
 

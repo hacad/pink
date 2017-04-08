@@ -45,8 +45,8 @@
 
     @media (--screen-desktop) {
       padding: 0 43px 0 27px;
-      margin-top: 70px;
-      margin-bottom: 58px;
+      margin-top: 73px;
+      margin-bottom: 49px;
     }
   }
 
@@ -90,9 +90,13 @@
       text-align: center;
 
       @media (--screen-tablet) {
-        padding: 0;
+        padding: 0 32px 0 0;
 
         font-size: $html-size;
+      }
+
+      @media (--screen-desktop) {
+        padding-right: 45px;
       }
   }
 
