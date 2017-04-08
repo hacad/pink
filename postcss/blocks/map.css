@@ -70,16 +70,20 @@
     height: 46px;
 
     @media (--screen-tablet) {
-      height: 73px;
+      height: 75px;
+    }
+
+    @media (--screen-tablet-map) {
+      height: 100px;
     }
 
     @media (--screen-desktop) {
       height: 111px;
     }
 
-    /*@media (--screen-desktop-map) {
+    @media (--screen-desktop-map) {
       height: 163px;
-    }*/
+    }
   }
 
   &__iframe {

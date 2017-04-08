@@ -36,14 +36,12 @@
     padding-top: 15%;
     padding-bottom: 7%;
 
-    background-image: url("../img/iphone-hand-desktop@1x.png"),
-                      url("../img/bg-back-desktop@1x.jpg");
-    background-position: right -52px bottom 0, center center;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center center;
   }
 
   @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 
   &--index {
@@ -53,8 +51,26 @@
     }
 
     @media (--screen-desktop) {
+      position: relative;
       padding-top: 218px;
       padding-bottom: 122px;
+    }
+
+    &::after {
+      @media (--screen-desktop) {
+        content: url("../img/iphone-hand-desktop@1x.png");
+        position: absolute;
+        bottom: 0;
+        right: 34.1%;
+
+        height: 645px;
+        width: 634px;
+
+      }
+
+      @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
+        content: url("../img/iphone-hand-desktop@2x.png");
+      }
     }
   }
 
