@@ -90,6 +90,12 @@
       }
     }
 
+    &--closed:hover::before {
+        border-color: $pink;
+        box-shadow: 0 10px 0 0 $pink,
+                    0 -10px 0 0 $pink;
+      }
+
     &--opened::before {
       content: "";
       position: absolute;
@@ -114,6 +120,14 @@
       transform: rotate(-45deg);
 
       border-left: 5px solid $white;
+    }
+
+    &--opened:hover::before {
+      border-color: $pink;
+    }
+
+    &--opened:hover::after {
+      border-color: $pink;
     }
 
     @media(--screen-desktop) {

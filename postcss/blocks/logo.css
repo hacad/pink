@@ -84,6 +84,7 @@
 
       &:active {
         opacity: 0.3;
+        fill: $gray-dark;
       }
     }
 
@@ -121,6 +122,8 @@
     &--pink {
       fill: $pink;
     }
+
+    /*& g:nth-child(1) {fill: white;}*/
 
     &--gray-dark {
       fill: $gray-dark;
