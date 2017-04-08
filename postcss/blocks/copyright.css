@@ -39,8 +39,7 @@
     }
 
     @media (--screen-desktop) {
-      padding-right: 18px;
-      margin-left: 20px;
+      padding-right: 0;
     }
   }
 

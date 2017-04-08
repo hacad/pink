@@ -66,6 +66,10 @@
     @media (--screen-tablet) {
       padding-bottom: 20px;
     }
+
+    @media (--screen-desktop) {
+      padding-bottom: 25px;
+    }
   }
 
   &--contacts {
@@ -92,6 +96,7 @@
 
     @media (--screen-desktop) {
       padding-top: 33px;
+      padding-bottom: 40px;
     }
   }
 
@@ -166,30 +171,49 @@
     }
 
     &--achievements {
+      @media (--screen-tablet) {
+        padding-top: 10px;
+      }
+
       @media (--screen-desktop) {
-        width: 95%;
+        width: 88%;
+        margin: 0 auto;
+        padding-top: 4px;
       }
     }
   }
 
   &__form-section-item--achievements {
     margin-top: 42px;
+
+    @media (--screen-desktop) {
+      margin-top: 35px;
+    }
   }
 
   &__form-section-item--app {
     margin-top: 36px;
 
     @media (--screen-tablet) {
-      margin-top: 40px;
+      margin-top: 26px;
       margin-left: 60px;
 
+      &:nth-child(2) {
+        margin-top: 41px;
+      }
+
       &:last-child {
-        margin-bottom: 50px;
+        margin-bottom: 45px;
       }
     }
 
     @media (--screen-desktop) {
+      margin-top: 22px;
       margin-left: 75px;
+
+      &:nth-child(2) {
+        margin-top: 38px;
+      }
     }
   }
 
@@ -212,10 +236,10 @@
     }
 
     @media (--screen-desktop) {
-      padding-top: 12px;
-      padding-left: 16px;
       width: 85%;
-      min-height: 105px;
+      min-height: 100px;
+      padding-top: 17px;
+      padding-left: 16px;
     }
   }
 
@@ -235,15 +259,17 @@
   &__form-section-item-group--achievements {
     @media (--screen-tablet) {
       padding-left: 60px;
+
       &:last-child {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       }
     }
 
     @media (--screen-desktop) {
-      &:last-child,
-      &:nth-last-child(2) {
-        padding-left: 0;
+      padding-left: 0;
+      &:last-child {
+        margin-bottom: 45px;
+        margin-right: -6px;
       }
     }
   }
