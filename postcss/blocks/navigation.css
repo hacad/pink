@@ -29,7 +29,6 @@
       flex-wrap: wrap;
       justify-content: flex-end;
       align-items: center;
-      margin-right: calc($screen-desktop-padding * 2)px;
     }
   }
 
@@ -97,7 +96,7 @@
 
   &__item {
     @media (--screen-desktop) {
-      margin-left: 80px;
+      margin: 0 22px 0 58px;
     }
   }
 }

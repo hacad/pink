@@ -16,8 +16,8 @@
       display: flex;
       justify-content: space-between;
 
-      padding-top: 30px;
-      padding-bottom: 50px;
+      padding-top: 27px;
+      padding-bottom: 51px;
     }
 
     @media (--screen-desktop) {
@@ -185,7 +185,7 @@
         width: 48px;
         height: 48px;
 
-        padding-left: 10px;
+        padding-left: 7px;
       }
     }
 
@@ -231,15 +231,15 @@
       position: relative;
       top: 0;
 
-      width: 71%;
+      width: 74%;
       display: inline-block;
       vertical-align: middle;
-      left: 2px;
+      left: -6px;
     }
 
     @media (--screen-desktop) {
       width: 70%;
-      margin-left: 6%;
+      margin-left: 9%;
     }
   }
 
@@ -260,11 +260,13 @@
     transition: all 0.2s;
 
     @media (--screen-tablet) {
-      left: 70%;
+      left: 72%;
+      width: 10px;
+      height: 10px;
     }
 
     @media (--screen-desktop) {
-      left: 27%;
+      left: 26%;
     }
   }
 
@@ -272,11 +274,11 @@
     left: 80%;
 
     @media (--screen-tablet) {
-      left: 45%;
+      left: 47%;
     }
 
     @media (--screen-desktop) {
-      left: 57%;
+      left: 56%;
     }
   }
 
@@ -284,11 +286,11 @@
     left: 20%;
 
     @media (--screen-tablet) {
-      left: 8%;
+      left: 13%;
     }
 
     @media (--screen-desktop) {
-      left: 88%;
+      left: 86%;
     }
   }
 

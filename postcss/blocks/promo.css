@@ -184,13 +184,9 @@
       @media (--screen-tablet) {
         font-size: $font-size-h1--desktop;
       }
-    }
 
-    &--photo {
-      padding-right: 0px;
-
-      @media (--screen-desktop) {
-        padding-right: 19px;
+      @media(--screen-desktop) {
+        padding-right: 2.4%;
       }
     }
 

@@ -9,6 +9,23 @@
       margin-left: 20px;
       padding-top: 17px;
     }
+
+    @media (--screen-desktop) {
+      margin-left: 0;
+    }
+  }
+
+  &--photo-footer {
+    margin-top: 18px;
+
+    @media (--screen-tablet) {
+      margin-top: 24px;
+      margin-left: 20px;
+    }
+
+    @media (--screen-desktop) {
+      margin-left: 0;
+    }
   }
 
   &--index-footer {

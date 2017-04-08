@@ -24,7 +24,7 @@
     }
 
     @media (--screen-desktop) {
-      width: 44%;
+      width: 45%;
       margin: 0;
     }
   }
@@ -165,7 +165,7 @@
     }
 
     @media (--screen-desktop) {
-      margin-right: 31px;
+      margin-right: 14px;
     }
   }
 }

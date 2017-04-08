@@ -82,6 +82,7 @@
 
       @media (--screen-tablet) {
         top: 6px;
+        left: -69px;
 
         box-shadow: 0 10px 0 0 $white,
                     0 -10px 0 0 $white;

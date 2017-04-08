@@ -87,7 +87,7 @@
     padding-bottom: 20px;
 
     @media (--screen-tablet) {
-      padding-bottom: 43px;
+      padding-bottom: 42px;
     }
 
     @media (--screen-desktop) {
@@ -97,6 +97,10 @@
 
   &--footer {
     padding-bottom: 30px;
+
+    @media (--screen-tablet) {
+      padding-top: 26px;
+    }
 
     @media (--screen-desktop) {
       padding-top: 27px;
@@ -203,7 +207,8 @@
     @media (--screen-tablet) {
       display: block;
       width: 78%;
-      margin: 40px auto;
+      min-height: 170px;
+      margin: 36px auto 51px auto;
     }
 
     @media (--screen-desktop) {
