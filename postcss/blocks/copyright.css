@@ -23,10 +23,11 @@
   &--photo {
     @media (--screen-tablet) {
       padding-top: 39px;
-      margin-right: 13px;
+      margin-right: 6px;
     }
 
     @media (--screen-desktop) {
+      margin-right: 12px;
       padding-top: 39px;
     }
   }
@@ -35,10 +36,11 @@
     @media (--screen-tablet) {
       padding-top: 29px;
       margin-left: 18px;
-      margin-right: 13px;
+      margin-right: 4px;
     }
 
     @media (--screen-desktop) {
+      margin-right: 12px;
       padding-right: 0;
     }
   }

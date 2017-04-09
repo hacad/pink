@@ -21,7 +21,7 @@
     and stylize it for photo page
   */
   &--photo {
-    padding: 40px 0;
+    padding: 23px 0;
 
     @media (--screen-tablet) {
       padding-top: 0;

@@ -20,7 +20,7 @@
 
     @media (--screen-tablet) {
       margin-top: 24px;
-      margin-left: 20px;
+      margin-left: 10px;
     }
 
     @media (--screen-desktop) {
@@ -38,6 +38,17 @@
     @media (--screen-desktop) {
       margin-left: 0;
       margin-top: -10px;
+    }
+  }
+
+  &--form-footer {
+    @media (--screen-tablet) {
+      margin-top: 10px;
+      margin-left: 11px;
+    }
+
+    @media (--screen-desktop) {
+      margin-left: 2px;
     }
   }
 
