@@ -71,8 +71,8 @@
     &__controls > label[for="btn-review-2"]::after,
     &__controls > label[for="btn-review-3"]::after {
       position: absolute;
-      top: 39%;
-      right: 10px;
+      top: 40%;
+      right: 15px;
 
       width: 30px;
       height: 30px;
@@ -110,8 +110,8 @@
     &__controls > label[for="btn-review-2"]::before,
     &__controls > label[for="btn-review-3"]::before {
       position: absolute;
-      left: 0;
-      top: 39%;
+      left: -4px;
+      top: 40%;
 
       width: 30px;
       height: 30px;

@@ -31,9 +31,13 @@
     background-color: $white;
 
     @media (--screen-tablet) {
-      top: 66px;
-      width: 176px;
+      font-size: 97px;
+      line-height: 169px;
+
+      top: 71px;
+      width: 178px;
       height: 178px;
+      left: 13px;
     }
 
     @media (--screen-desktop) {
@@ -54,7 +58,7 @@
     @media (--screen-tablet) {
       position: relative;
       top: 16px;
-      left: -17px;
+      left: -22px;
 
       width: 273px;
       height: 279px;

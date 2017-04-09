@@ -9,8 +9,8 @@
 
   &--index {
     @media (--screen-tablet) {
-      padding-top: 14px;
-      margin-right: -4px;
+      padding-top: 17px;
+      margin-right: 14px;
     }
 
     @media (--screen-desktop) {
@@ -22,13 +22,12 @@
 
   &--photo {
     @media (--screen-tablet) {
-      padding-top: 35px;
-      margin-right: -4px;
+      padding-top: 39px;
+      margin-right: 13px;
     }
 
     @media (--screen-desktop) {
-      padding-top: 30px;
-      margin-right: 14px;
+      padding-top: 39px;
     }
   }
 
@@ -36,12 +35,11 @@
     @media (--screen-tablet) {
       padding-top: 29px;
       margin-left: 18px;
-      margin-right: -5px;
+      margin-right: 13px;
     }
 
     @media (--screen-desktop) {
-      padding-right: 18px;
-      margin-left: 20px;
+      padding-right: 0;
     }
   }
 
@@ -89,7 +87,7 @@
     }
 
     @media (--screen-tablet) {
-      width: 35px;
+      width: 40px;
       height: 40px;
     }
 

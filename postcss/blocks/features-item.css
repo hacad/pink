@@ -12,7 +12,8 @@
   @media (--screen-desktop) {
     position: relative;
 
-    padding-top: 160px;
+    margin-left: 12px;
+    padding-top: 152px;
   }
 
   &__title {
@@ -31,6 +32,7 @@
     }
 
     @media (--screen-desktop) {
+      margin-bottom: 19px;
       padding-right: 30px;
 
       text-align: center;
@@ -50,6 +52,8 @@
   &:last-child &__title {
     @media (--screen-desktop) {
       padding-right: 0;
+      padding-left: 33px;
+      width: 80%
     }
   }
 
@@ -94,8 +98,8 @@
 
     @media(--screen-tablet) {
       position: absolute;
-      left: 41px;
-      top: -35px;
+      left: 21px;
+      top: -38px;
 
       max-width: 268px;
       max-height: 481px;
@@ -105,8 +109,8 @@
       @for $i from 1 to 3 {
         &--image$i {
           position: absolute;
-          top: -200px;
-          left: -22px;
+          top: -203px;
+          left: 9px;
           right: 0;
 
           display: block;
@@ -118,11 +122,11 @@
       }
 
       &--image1 {
-        left: -45px;
+        left: -43px;
       }
 
       &--image2 {
-        left: -19px;
+        left: -18px;
       }
     }
   }

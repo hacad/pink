@@ -18,7 +18,7 @@
   }
 
   @media (--screen-tablet) {
-    height: 368px;
+    height: 378px;
 
     background: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
   }
 
   @media (--screen-desktop) {
-    height: 486px;
+    height: 504px;
 
     background: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -52,6 +52,7 @@
     width: 100%;
   }
 
+  /*make height in %*/
   &::before {
     position: absolute;
     top: -1px;
@@ -66,14 +67,22 @@
     background-size: cover;
     background-position: top center;
 
-    height: 36px;
+    height: 46px;
 
     @media (--screen-tablet) {
-      height: 73px;
+      height: 75px;
+    }
+
+    @media (--screen-tablet-map) {
+      height: 100px;
     }
 
     @media (--screen-desktop) {
-      height: 163px;
+      height: 111px;
+    }
+
+    @media (--screen-desktop-map) {
+      height: 183px;
     }
   }
 

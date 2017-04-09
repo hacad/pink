@@ -7,16 +7,15 @@
   background-color: $white;
 
   @media (--screen-tablet) {
-    /*margin-top: -45px;*/
     margin-top: 0;
-    padding-top: 9px;
-    padding-bottom: 17px;
+    padding-top: 14px;
+    padding-bottom: 21px;
   }
 
   @media (--screen-desktop) {
     margin-top: 0;
     padding-top: 72px;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
 
     &__container::before {
       display: block;

@@ -6,7 +6,38 @@
 
   &--footer {
     @media (--screen-tablet) {
+      margin-left: 20px;
       padding-top: 17px;
+    }
+
+    @media (--screen-desktop) {
+      margin-left: 0;
+    }
+  }
+
+  &--photo-footer {
+    margin-top: 18px;
+
+    @media (--screen-tablet) {
+      margin-top: 24px;
+      margin-left: 20px;
+    }
+
+    @media (--screen-desktop) {
+      margin-left: 0;
+    }
+  }
+
+  &--index-footer {
+    margin-left: 39px;
+
+    @media (--screen-tablet) {
+      margin-left: 19px
+    }
+
+    @media (--screen-desktop) {
+      margin-left: 0;
+      margin-top: -10px;
     }
   }
 
@@ -54,6 +85,7 @@
 
       &:active {
         opacity: 0.3;
+        fill: $gray-dark;
       }
     }
 
@@ -91,6 +123,8 @@
     &--pink {
       fill: $pink;
     }
+
+    /*& g:nth-child(1) {fill: white;}*/
 
     &--gray-dark {
       fill: $gray-dark;

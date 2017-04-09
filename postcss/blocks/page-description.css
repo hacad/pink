@@ -15,30 +15,31 @@
   }
 
   &--photo {
-    padding-bottom: 43px;
+    padding-bottom: 49px;
 
     @media (--screen-tablet) {
-      padding-bottom: 53px;
       padding-top: 49px;
+      padding-bottom: 59px;
     }
 
     @media (--screen-desktop) {
       padding-top: 71px;
-      padding-bottom: 66px;
+      padding-bottom: 65px;
     }
   }
 
   &--photo2 {
-    padding-top: 37px;
+    padding-top: 32px;
+    padding-bottom: 44px;
 
     @media (--screen-tablet) {
       padding-top: 22px;
-      padding-bottom: 44px;
+      padding-bottom: 53px;
     }
 
     @media (--screen-desktop) {
-      padding-top: 40px;
-      padding-bottom: 43px;
+      padding-top: 5px;
+      padding-bottom: 63px;
     }
   }
 
@@ -47,7 +48,7 @@
     padding-bottom: 18px;
 
     @media (--screen-tablet) {
-      padding-bottom: 37px;
+      padding-bottom: 35px;
     }
 
     @media (--screen-desktop) {
@@ -62,7 +63,8 @@
     }
 
     @media (--screen-desktop) {
-      padding-bottom: 74px;
+      padding-top: 64px;
+      padding-bottom: 83px;
     }
   }
 
@@ -84,16 +86,11 @@
     }
 
     &--photo {
-      padding: 7px 0 7px 20px;
-      margin: 0;
-
-      @media (--screen-tablet) {
-        padding-left: 38px;
-      }
+      padding: 8px 0 0 0;
 
       @media (--screen-desktop) {
         box-sizing: border-box;
-        width: 60%;
+        width: 75%;
         margin: 0 auto;
         padding: 20px 30px;
       }
@@ -103,7 +100,6 @@
       padding-left: 0;
 
       @media (--screen-desktop) {
-        /*width: $screen-desktop;*/
         padding-left: 20px;
       }
     }
@@ -111,6 +107,7 @@
 
   &__title {
     margin-bottom: 30px;
+    padding-right: 16px;
 
     display: block;
 
@@ -126,12 +123,18 @@
     }
 
     @media (--screen-tablet) {
-      margin-bottom: 0;
-      font-size: $font-size-h1--tablet;
+      padding: 0 20px 0 0;
+      margin: 0 auto;
+
+      font-size: 2.375rem;
+      line-height: $line-height-h2;
     }
 
     @media (--screen-desktop) {
+      padding: 0;
+
       font-size: $font-size-h1--desktop;
+      line-height: $line-height-h1;
     }
   }
 
@@ -166,8 +169,14 @@
       }
 
       @media (--screen-desktop) {
-        padding-right: 2fo2px;
+        max-width: 86%;
+        padding-right: 24px;
       }
+    }
+
+    &--photo2 {
+      max-width: 90%;
+      padding-right: 22px;
     }
 
     &--form {
@@ -175,13 +184,14 @@
 
       @media (--screen-tablet) {
         max-width: 89%;
-        padding-top: 43px;
+        padding-top: 46px;
 
         line-height: 1.7;
       }
 
       @media (--screen-desktop) {
         padding-left: 10px;
+        padding-top: 43px;
       }
     }
   }

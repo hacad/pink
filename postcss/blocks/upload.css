@@ -16,8 +16,8 @@
       display: flex;
       justify-content: space-between;
 
-      padding-top: 30px;
-      padding-bottom: 50px;
+      padding-top: 27px;
+      padding-bottom: 52px;
     }
 
     @media (--screen-desktop) {
@@ -83,15 +83,15 @@
   &__upload-field {
     margin-bottom: 80px;
 
-    margin-left: 36px;
+    margin-left: 13%;
 
     @media (--screen-tablet) {
       position: relative;
 
       width: 88%;
       margin-left: 11%;
-      margin-bottom: 6px;
-      padding-bottom: 6px;
+      margin-bottom: -7px;
+      padding-bottom: 12px;
 
       border-bottom: 1px solid $gray;
     }
@@ -150,26 +150,32 @@
 
     transform: translateY(-50%);
 
-    fill: $gray;
+    fill: #b5b9be;
 
     transition:  fill 0.2s;
 
     /*How to fill the last icon?*/
-    #Layer_3& path {
+
+    & path {
       fill: $gray;
       transition:  fill 0.2s;
     }
 
     &:hover,
-    #Layer_3&:hover * {
-      fill: $pink;
+    &:hover * {
+      fill: #8d949b;
     }
 
     @media (--screen-tablet) {
       width: 24px;
       height: 24px;
 
-      &, #Layer_3& path {
+      &, & * {
+        fill: $pink;
+      }
+
+      &:hover,
+      &:hover * {
         fill: $pink;
       }
     }
@@ -185,7 +191,7 @@
         width: 48px;
         height: 48px;
 
-        padding-left: 10px;
+        padding-left: 7px;
       }
     }
 
@@ -208,8 +214,8 @@
     }
   }
 
-  &__upload-field-input:checked + &__upload-field-label &__upload-svg,
-  &__upload-field-input:checked + &__upload-field-label #Layer_3&__upload-svg path {
+  &__upload-field-input:checked + &__upload-field-label &__upload-svg *,
+  &__upload-field-input:checked + &__upload-field-label * {
     fill: $pink;
   }
 
@@ -231,15 +237,15 @@
       position: relative;
       top: 0;
 
-      width: 71%;
+      width: 74%;
       display: inline-block;
       vertical-align: middle;
-      left: 2px;
+      left: -6px;
     }
 
     @media (--screen-desktop) {
       width: 70%;
-      margin-left: 6%;
+      margin-left: 9%;
     }
   }
 
@@ -260,11 +266,13 @@
     transition: all 0.2s;
 
     @media (--screen-tablet) {
-      left: 70%;
+      left: 72%;
+      width: 10px;
+      height: 10px;
     }
 
     @media (--screen-desktop) {
-      left: 27%;
+      left: 26%;
     }
   }
 
@@ -272,11 +280,11 @@
     left: 80%;
 
     @media (--screen-tablet) {
-      left: 45%;
+      left: 47%;
     }
 
     @media (--screen-desktop) {
-      left: 57%;
+      left: 56%;
     }
   }
 
@@ -284,11 +292,11 @@
     left: 20%;
 
     @media (--screen-tablet) {
-      left: 8%;
+      left: 13%;
     }
 
     @media (--screen-desktop) {
-      left: 88%;
+      left: 86%;
     }
   }
 
@@ -309,10 +317,10 @@
       content: "";
       position: absolute;
       top: -43px;
-      left: -40px;
+      left: -7%;
 
       display: block;
-      width: 122%;
+      width: 114%;
       height: 2px;
       background-color: $lightest-gray;
 
@@ -348,7 +356,7 @@
       margin-bottom: 10px;
 
       @media (--screen-tablet) {
-        margin-bottom: 24px;
+        margin-bottom: 21px;
       }
 
       @media (--screen-desktop) {

@@ -15,12 +15,13 @@
 
   @media (--screen-desktop) {
     background-color: $light-gray;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
   }
 
   &__container {
     @media(--screen-tablet){
-      padding-top: 45px;
+      width: 92%;
+      padding-top: 43px;
       padding-bottom: 50px;
     }
 
@@ -34,8 +35,8 @@
     margin-left: 75px;
 
     @media (--screen-tablet) {
-      padding-top: 8%;
-      margin-left: 308px;
+      padding-top: 9%;
+      margin-left: 303px;
     }
 
     @media (--screen-desktop) {
@@ -58,17 +59,21 @@
 
     @media (--screen-desktop) {
       max-width: 100%;
-      margin-bottom: 22px;
+      margin-bottom: 21px;
+
+      line-height: 1.4;
     }
   }
 
   &__text {
     @media (--screen-tablet) {
-      margin-top: 12px;
+      margin-top: 9px;
+      line-height: 1.7;
     }
 
     @media (--screen-desktop) {
-      margin-bottom: 38px;
+      margin-bottom: 30px;
+
       font-size: $font-size-big;
     }
   }

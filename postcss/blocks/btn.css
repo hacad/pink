@@ -49,6 +49,11 @@
     color: hsla(0,0%,100%,.3);
   }
 
+  &--green:disabled {
+    color: $white;
+    background-color: $disabled;
+  }
+
   &--pink {
     background-color: transparent;
     border-color: $pink;

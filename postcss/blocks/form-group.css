@@ -38,6 +38,7 @@
   input[type="email"],
   input[type="tel"] {
     padding-left: 20px;
+    font-size: $font-size-big;
     transition: box-shadow .2s;
   }
 
@@ -83,12 +84,12 @@
       }
 
       @media (--screen-desktop) {
-        margin-top: 15px;
+        margin-top: 17px;
       }
     }
 
     &--name {
-      @media(--screen-desktop) {
+      @media(--screen-tablet) {
         margin-bottom: 0;
       }
     }

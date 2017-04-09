@@ -23,7 +23,7 @@
   }
 
   @media (--screen-tablet) {
-    padding: 28px 0 40px 0;
+    padding: 28px 0 43px 0;
 
     &.no-js {
       padding-bottom: 0;
@@ -81,10 +81,30 @@
                   0 -21px 0 0 $white;
 
       @media (--screen-tablet) {
+        top: 6px;
+        left: -69px;
+
         box-shadow: 0 10px 0 0 $white,
                     0 -10px 0 0 $white;
 
+        &:hover::before {
+          border-color: $pink;
+          box-shadow: 0 10px 0 0 $pink,
+                    0 -10px 0 0 $pink;
+        }
       }
+
+    }
+
+    &--closed:hover::before {
+        border-color: $pink;
+        box-shadow: 0 -10px 0 0 $pink,
+                    0 -21px 0 0 $pink;
+
+        @media (--screen-tablet) {
+          box-shadow: 0 10px 0 0 $pink,
+                      0 -10px 0 0 $pink;
+        }
     }
 
     &--opened::before {
@@ -111,6 +131,14 @@
       transform: rotate(-45deg);
 
       border-left: 5px solid $white;
+    }
+
+    &--opened:hover::before {
+      border-color: $pink;
+    }
+
+    &--opened:hover::after {
+      border-color: $pink;
     }
 
     @media(--screen-desktop) {

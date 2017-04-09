@@ -15,22 +15,21 @@
     line-height: $line-height;
 
     cursor: pointer;
-    overflow: hidden;
     text-overflow: ellipsis;
 
     @media (--screen-tablet) {
-      padding-left: 60px;
+      padding-left: 59px;
     }
 
     @media(--screen-desktop) {
-      padding-top: 6px;
+      padding-top: 11px;
     }
   }
 
   &__label::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
 
     width: 33px;
@@ -42,12 +41,20 @@
     border-radius: 2px;
     background-color: $white;
     transition: border 0.2s;
+
+    @media (--screen-tablet) {
+      top: -6px;
+    }
+
+    @media (--screen-desktop) {
+      top: 6px;
+    }
   }
 
   &__label::after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 3px;
     left: 5px;
 
     width: 22px;
@@ -63,6 +70,11 @@
     opacity: 0;
     /*display: none;*/
     transition: opacity 0.2s;
+
+    @media (--screen-desktop) {
+      top: 12px;
+      left: 6px;
+    }
   }
 
   &__input:checked + &__label::after{

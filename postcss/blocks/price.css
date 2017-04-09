@@ -5,14 +5,14 @@
   /*outline: 1px solid red;*/
 
   &__container {
-    padding: 60px 0 45px 0;
+    padding: 60px 0 46px 0;
 
     @media (--screen-tablet) {
-      padding-top: 33px;
+      padding-top: 31px;
     }
 
     @media (--screen-desktop) {
-      padding: 29px 0 66px 0;
+      padding: 27px 0 68px 0;
     }
   }
 }
@@ -87,15 +87,15 @@
     @media (--screen-tablet) {
       padding: 9px 15px;
       text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
     }
 
     @media (--screen-desktop) {
       padding: 18px 20px;
       font-size: $font-size-big;
-
-      &:first-child {
-        text-align: left;
-      }
     }
 
     &--header {
@@ -161,7 +161,7 @@
       content: attr(data-option);
       position: absolute;
       top: 50%;
-      left: 10%;
+      left: 8%;
 
       transform: translateY(-50%);
       text-transform: uppercase;
@@ -180,7 +180,7 @@
   }
 
   &__icon-yes {
-    width: 40px;
+    width: 35px;
     height: 22px;
 
     fill: $green;

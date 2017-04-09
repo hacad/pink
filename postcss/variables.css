@@ -8,6 +8,7 @@ $dark: #1d2631;
 $green: #2aab6d;
 $green-dark: #1c9b5e;
 $red: #f25b26;
+$disabled: #e5e5e5;
 
 $font-family: "Open Sans", "Arial", sans-serif;
 $font-weight: 400;
@@ -33,7 +34,8 @@ $line-height-big: 2.2;
 $container-padding: 20;
 
 $container-width: 87.5%; /*280px/320px*/
-$container-width-tablet: 88.57142857142857%; /*620px/700px*/
+/*$container-width-tablet: 88.57142857142857%;*/ /*620px/700px*/
+$container-width-tablet: 93.93%; /*620px/660px*/
 $container-width-desktop: 97.91666666666667%; /*940px/960px*/
 
 $screen-mobile: 320px;
@@ -44,4 +46,6 @@ $screen-desktop-padding: 10;
 @custom-media --screen-mobile (min-width: 320px);
 @custom-media --screen-mobile-promo (min-width: 321px);
 @custom-media --screen-tablet (min-width: 660px);
+@custom-media --screen-tablet-map (min-width: 661px);
 @custom-media --screen-desktop (min-width: 960px);
+@custom-media --screen-desktop-map (min-width: 1111px);
