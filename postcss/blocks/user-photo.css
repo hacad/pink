@@ -16,8 +16,8 @@
   }
 
   @media(--screen-desktop) {
-    width: 31%;
-    margin: 0 22px 54px 0px;
+    width: 31.2%;
+    margin: 0 21px 54px 0px;
 
     &:nth-child(5) {
       margin-bottom: 53px;

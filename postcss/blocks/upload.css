@@ -17,7 +17,7 @@
       justify-content: space-between;
 
       padding-top: 27px;
-      padding-bottom: 51px;
+      padding-bottom: 52px;
     }
 
     @media (--screen-desktop) {
@@ -90,8 +90,8 @@
 
       width: 88%;
       margin-left: 11%;
-      margin-bottom: 6px;
-      padding-bottom: 6px;
+      margin-bottom: -7px;
+      padding-bottom: 12px;
 
       border-bottom: 1px solid $gray;
     }
@@ -356,7 +356,7 @@
       margin-bottom: 10px;
 
       @media (--screen-tablet) {
-        margin-bottom: 24px;
+        margin-bottom: 21px;
       }
 
       @media (--screen-desktop) {

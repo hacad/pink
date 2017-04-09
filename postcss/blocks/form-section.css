@@ -1,6 +1,6 @@
 .form-section {
   padding-top: 23px;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
 
   background-color: $white;
   border: none;
@@ -20,6 +20,8 @@
   }
 
   @media (--screen-tablet) {
+    padding-bottom: 19px;
+
     &--name {
       order: 1;
     }
@@ -61,7 +63,7 @@
   /*TODO: try to replace padding with margin*/
   &--achievements {
     padding-top: 37px;
-    padding-bottom: 39px;
+    padding-bottom: 33px;
 
     @media (--screen-tablet) {
       padding-bottom: 20px;
@@ -88,7 +90,7 @@
 
   &--emotions {
     padding-top: 37px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 
     @media (--screen-tablet) {
       padding-bottom: 42px;
@@ -104,7 +106,8 @@
     padding-bottom: 30px;
 
     @media (--screen-tablet) {
-      padding-top: 26px;
+      padding-top: 27px;
+      padding-bottom: 28px;
     }
 
     @media (--screen-desktop) {
@@ -184,7 +187,11 @@
   }
 
   &__form-section-item--achievements {
-    margin-top: 42px;
+    margin-top: 43px;
+
+    @media (--screen-tablet) {
+      margin-top: 42px;
+    }
 
     @media (--screen-desktop) {
       margin-top: 35px;
@@ -224,7 +231,7 @@
     margin-top: 17px;
 
     font-size: $font-size-big;
-    line-height: $line-height-h2;
+    line-height: 1.5;
 
     border: 2px solid $light-gray;
 
