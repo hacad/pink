@@ -44,7 +44,7 @@
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center center;
-    /*background-size: cover;*/
+    background-size: cover;
   }
 
   @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
