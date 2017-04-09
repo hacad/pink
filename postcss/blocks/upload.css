@@ -155,13 +155,14 @@
     transition:  fill 0.2s;
 
     /*How to fill the last icon?*/
-    #Layer_3& path {
+
+    & path {
       fill: $gray;
       transition:  fill 0.2s;
     }
 
     &:hover,
-    #Layer_3&:hover * {
+    &:hover * {
       fill: #8d949b;
     }
 
@@ -169,7 +170,12 @@
       width: 24px;
       height: 24px;
 
-      &, #Layer_3& path {
+      &, & * {
+        fill: $pink;
+      }
+
+      &:hover,
+      &:hover * {
         fill: $pink;
       }
     }
@@ -208,8 +214,8 @@
     }
   }
 
-  &__upload-field-input:checked + &__upload-field-label &__upload-svg,
-  &__upload-field-input:checked + &__upload-field-label #Layer_3&__upload-svg path {
+  &__upload-field-input:checked + &__upload-field-label &__upload-svg *,
+  &__upload-field-input:checked + &__upload-field-label * {
     fill: $pink;
   }
 

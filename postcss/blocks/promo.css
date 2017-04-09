@@ -10,6 +10,11 @@
   background-size: auto, cover;
   background-repeat: no-repeat;
 
+  @media (--screen-mobile-promo) {
+    background-size: auto 285px, cover;
+    background-position: center 175px, center center;
+  }
+
   @media (--screen-mobile-promo) and (min-resolution: 144dpi), (--screen-mobile-promo) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
     background-size: auto 285px, cover;
@@ -22,6 +27,7 @@
 
     background-image: url("../img/iphone-hand-tablet@1x.png"),
                     url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto 545px, cover;
     background-position: bottom center, center center;
   }
 
@@ -38,6 +44,7 @@
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center center;
+    /*background-size: cover;*/
   }
 
   @media (--screen-desktop) and (min-resolution: 144dpi), (--screen-desktop) and (min-resolution: 1.5dppx) {
@@ -77,7 +84,7 @@
       }
 
       @media (--screen-desktop-map) {
-        right: 26.5%;
+        right: 17.5%;
       }
     }
   }

@@ -87,14 +87,25 @@
         box-shadow: 0 10px 0 0 $white,
                     0 -10px 0 0 $white;
 
+        &:hover::before {
+          border-color: $pink;
+          box-shadow: 0 10px 0 0 $pink,
+                    0 -10px 0 0 $pink;
+        }
       }
+
     }
 
     &--closed:hover::before {
         border-color: $pink;
-        box-shadow: 0 10px 0 0 $pink,
-                    0 -10px 0 0 $pink;
-      }
+        box-shadow: 0 -10px 0 0 $pink,
+                    0 -21px 0 0 $pink;
+
+        @media (--screen-tablet) {
+          box-shadow: 0 10px 0 0 $pink,
+                      0 -10px 0 0 $pink;
+        }
+    }
 
     &--opened::before {
       content: "";
