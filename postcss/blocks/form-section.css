@@ -194,7 +194,7 @@
     background-color: transparent;
 
     @media (--screen-tablet) {
-      width: 50%;
+      width: 52%;
       padding: 0 20px;
       background-color: $white
     }
