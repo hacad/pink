@@ -10,7 +10,7 @@
   &--index {
     @media (--screen-tablet) {
       padding-top: 17px;
-      margin-right: 14px;
+      margin-right: 6px;
     }
 
     @media (--screen-desktop) {

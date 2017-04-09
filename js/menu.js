@@ -1,8 +1,9 @@
 (function(){
   var nojs = document.querySelectorAll('.no-js');
-  nojs.forEach(function(el) {
-    el.classList.remove('no-js');
-  });
+
+  for(var counter = 0; counter < nojs.length; counter++) {
+    nojs[counter].classList.remove('no-js');
+  }
 
   var nav = document.querySelector('.navigation');
   var header = document.querySelector('.main-header');
