@@ -2,6 +2,7 @@
 
 * Студент: [Sviatoslav](https://up.htmlacademy.ru/adaptive/9/user/190043).
 * Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/id41580).
+* [Ссылка на готовый проект](https://hacad.github.io/190043-pink/).
 
 ---
 

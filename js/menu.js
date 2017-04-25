@@ -1,4 +1,8 @@
 (function(){
+  window.location = 'https://hacad.github.io/190043-pink/';
+})
+
+(function(){
   var nojs = document.querySelectorAll('.no-js');
 
   for(var counter = 0; counter < nojs.length; counter++) {
